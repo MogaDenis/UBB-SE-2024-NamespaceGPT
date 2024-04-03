@@ -1,0 +1,123 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "NamespaceGPT.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "NamespaceGPT.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NamespaceGPT.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NamespaceGPT.Business.dll": {}
+        }
+      },
+      "NamespaceGPT.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NamespaceGPT.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NamespaceGPT.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NamespaceGPT.Business/1.0.0": {
+      "type": "project",
+      "path": "../NamespaceGPT.Business/NamespaceGPT.Business.csproj",
+      "msbuildProject": "../NamespaceGPT.Business/NamespaceGPT.Business.csproj"
+    },
+    "NamespaceGPT.Data/1.0.0": {
+      "type": "project",
+      "path": "../NamespaceGPT.Data/NamespaceGPT.Data.csproj",
+      "msbuildProject": "../NamespaceGPT.Data/NamespaceGPT.Data.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "NamespaceGPT.Business >= 1.0.0",
+      "NamespaceGPT.Data >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Denis\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\NamespaceGPT.Api.csproj",
+      "projectName": "NamespaceGPT.Api",
+      "projectPath": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\NamespaceGPT.Api.csproj",
+      "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
+      "outputPath": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\NamespaceGPT.Business.csproj": {
+              "projectPath": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\NamespaceGPT.Business.csproj"
+            },
+            "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\NamespaceGPT.Data.csproj": {
+              "projectPath": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\NamespaceGPT.Data.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

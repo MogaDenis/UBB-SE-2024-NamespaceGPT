@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NamespaceGPT.Api\NamespaceGPT.Api.csproj" />
+    <ProjectReference Include="..\NamespaceGPT.Business\NamespaceGPT.Business.csproj" />
+    <ProjectReference Include="..\NamespaceGPT.Data\NamespaceGPT.Data.csproj" />
+  </ItemGroup>
+
+</Project>
