@@ -20,17 +20,17 @@ namespace NamespaceGPT.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly UserController _controller;
+        private readonly UserController _userController;
 
         public MainWindow()
         {
             var repository = new UserRepository();
             var service = new UserService(repository);
 
-            _controller = new UserController(service);
+            _userController = new UserController(service);
             InitializeComponent();
 
-            var users = _controller.GetAllUsers();
+            var users = _userController.GetAllUsers();
 
             label1.Content = users.ElementAt(0).Username;
             label2.Content = users.ElementAt(1).Username;

@@ -3,40 +3,92 @@
   "WorkspaceRootPath": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\models\\useractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\models\\useractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|solutionrelative:namespacegpt.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|solutionrelative:namespacegpt.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|solutionrelative:namespacegpt.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\namespacegpt.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.api\\controllers\\useractivitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|solutionrelative:namespacegpt.api\\controllers\\useractivitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.business\\services\\useractivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\useractivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.business\\services\\interfaces\\iuseractivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\interfaces\\iuseractivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\interfaces\\iuseractivityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\interfaces\\iuseractivityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\useractivityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\useractivityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\namespacegpt.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\models\\iaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\models\\iaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.wpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|solutionrelative:namespacegpt.wpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\namespacegpt.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|solutionrelative:namespacegpt.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.business\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\namespacegpt.business\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\namespacegpt.data\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.api\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|solutionrelative:namespacegpt.api\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.business\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.business\\services\\interfaces\\isaleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\interfaces\\isaleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\interfaces\\isalerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\interfaces\\isalerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\faculty materials\\second year\\second semester\\se\\namespacegpt\\namespacegpt\\namespacegpt.data\\models\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\models\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\namespacegpt.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|solutionrelative:namespacegpt.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\namespacegpt.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\namespacegpt.wpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9481ED70-712E-4199-B732-1A4BA4B61BC4}|NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj|solutionrelative:namespacegpt.wpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 293,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,19 +106,187 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "UserActivityController.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\UserActivityController.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Api\\Controllers\\UserActivityController.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\UserActivityController.cs",
+              "RelativeToolTip": "NamespaceGPT.Api\\Controllers\\UserActivityController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAIwBEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:41:53.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserActivityService.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\UserActivityService.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\UserActivityService.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\UserActivityService.cs",
+              "RelativeToolTip": "NamespaceGPT.Business\\Services\\UserActivityService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAACYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:39:43.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserActivityService.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\IUserActivityService.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\Interfaces\\IUserActivityService.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\IUserActivityService.cs",
+              "RelativeToolTip": "NamespaceGPT.Business\\Services\\Interfaces\\IUserActivityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:39:01.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserActivityRepository.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\UserActivityRepository.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\UserActivityRepository.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\UserActivityRepository.cs",
+              "RelativeToolTip": "NamespaceGPT.Data\\Repositories\\UserActivityRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:35:30.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUserActivityRepository.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\Interfaces\\IUserActivityRepository.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\Interfaces\\IUserActivityRepository.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\Interfaces\\IUserActivityRepository.cs",
+              "RelativeToolTip": "NamespaceGPT.Data\\Repositories\\Interfaces\\IUserActivityRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:17:00.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserActivity.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\UserActivity.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Data\\Models\\UserActivity.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\UserActivity.cs",
+              "RelativeToolTip": "NamespaceGPT.Data\\Models\\UserActivity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:15:37.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAction.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\IAction.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Data\\Models\\IAction.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\IAction.cs",
+              "RelativeToolTip": "NamespaceGPT.Data\\Models\\IAction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:15:13.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SaleController.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\SaleController.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Api\\Controllers\\SaleController.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\SaleController.cs",
+              "RelativeToolTip": "NamespaceGPT.Api\\Controllers\\SaleController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAUwAEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:09:38.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SaleService.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\SaleService.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\SaleService.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\SaleService.cs",
+              "RelativeToolTip": "NamespaceGPT.Business\\Services\\SaleService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAADwvzAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:07:14.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ISaleService.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\ISaleService.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\Interfaces\\ISaleService.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\ISaleService.cs",
+              "RelativeToolTip": "NamespaceGPT.Business\\Services\\Interfaces\\ISaleService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T19:06:57.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SaleRepository.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\SaleRepository.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\SaleRepository.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\SaleRepository.cs",
+              "RelativeToolTip": "NamespaceGPT.Data\\Repositories\\SaleRepository.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAUwEIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T18:59:15.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISaleRepository.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\Interfaces\\ISaleRepository.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\Interfaces\\ISaleRepository.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\Interfaces\\ISaleRepository.cs",
+              "RelativeToolTip": "NamespaceGPT.Data\\Repositories\\Interfaces\\ISaleRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T18:56:47.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\Sale.cs",
+              "RelativeDocumentMoniker": "NamespaceGPT.Data\\Models\\Sale.cs",
+              "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\Sale.cs",
+              "RelativeToolTip": "NamespaceGPT.Data\\Models\\Sale.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T18:55:58.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "NamespaceGPT.WPF\\MainWindow.xaml",
               "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.WPF\\MainWindow.xaml",
               "RelativeToolTip": "NamespaceGPT.WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-03T17:57:55.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T17:57:55.419Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.WPF\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.WPF\\AssemblyInfo.cs",
@@ -74,25 +294,24 @@
               "RelativeToolTip": "NamespaceGPT.WPF\\AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T17:57:35.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T17:57:35.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.WPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.WPF\\MainWindow.xaml.cs",
               "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.WPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "NamespaceGPT.WPF\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACkAAAAAAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T17:57:30.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Api\\Controllers\\UserController.cs",
@@ -105,59 +324,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\UserService.cs",
               "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\UserService.cs",
               "RelativeToolTip": "NamespaceGPT.Business\\Services\\UserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwAoAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T17:48:09.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\Interfaces\\IUserService.cs",
               "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\IUserService.cs",
               "RelativeToolTip": "NamespaceGPT.Business\\Services\\Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T17:47:59.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\UserRepository.cs",
               "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "NamespaceGPT.Data\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwC8AAAAaAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAiwCoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T17:42:21.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\Interfaces\\IUserRepository.cs",
               "ToolTip": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\Interfaces\\IUserRepository.cs",
               "RelativeToolTip": "NamespaceGPT.Data\\Repositories\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T17:39:27.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\User.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Data\\Models\\User.cs",
@@ -165,8 +384,7 @@
               "RelativeToolTip": "NamespaceGPT.Data\\Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T17:35:56.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T17:35:56.906Z"
             }
           ]
         }
