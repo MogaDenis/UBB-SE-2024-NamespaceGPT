@@ -1,14 +1,13 @@
 ﻿using NamespaceGPT.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NamespaceGPT.Business.Services.Interfaces
 {
     public interface IUserService
     {
-        IEnumerable<User> GetAllUser();
+        int AddUser(User user);
+        bool DeleteUser(int id);
+        bool UpdateUser(int id, User user);
+        IEnumerable<User> GetAllUsers();
+        User? GetUser(int id);
     }
 }

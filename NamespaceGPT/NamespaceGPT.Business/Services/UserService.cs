@@ -13,9 +13,29 @@ namespace NamespaceGPT.Business.Services
             _userRepository = userRepository ?? throw new ArgumentNullException(nameof(userRepository));
         }
 
-        public IEnumerable<User> GetAllUser()
+        public int AddUser(User user)
+        {
+            return _userRepository.AddUser(user);
+        }
+
+        public bool DeleteUser(int id)
+        {
+            return _userRepository.DeleteUser(id);
+        }
+
+        public IEnumerable<User> GetAllUsers()
         {
             return _userRepository.GetAllUsers();
+        }
+
+        public User? GetUser(int id)
+        {
+            return _userRepository.GetUser(id);
+        }
+
+        public bool UpdateUser(int id, User user)
+        {
+            return _userRepository.UpdateUser(id, user);    
         }
     }
 }

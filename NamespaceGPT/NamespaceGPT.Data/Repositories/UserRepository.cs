@@ -5,7 +5,7 @@ namespace NamespaceGPT.Data.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private readonly IList<User> _users;
+        private readonly List<User> _users;
 
         public UserRepository()
         {
@@ -40,7 +40,15 @@ namespace NamespaceGPT.Data.Repositories
 
         public bool DeleteUser(int id)
         {
-            throw new NotImplementedException();
+            int index = _users.FindIndex(user => user.Id == id);
+
+            if (index == -1)
+            {
+                return false;
+            }
+
+            _users.RemoveAt(index);
+            return true;
         }
 
         public IEnumerable<User> GetAllUsers()
@@ -55,7 +63,15 @@ namespace NamespaceGPT.Data.Repositories
 
         public bool UpdateUser(int id, User user)
         {
-            throw new NotImplementedException();
+            int index = _users.FindIndex(user => user.Id == id);
+
+            if (index == -1)
+            {
+                return false;
+            }
+
+            _users[index] = user;
+            return true;
         }
     }
 }
