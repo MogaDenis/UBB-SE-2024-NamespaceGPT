@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "NamespaceGPT.Business/1.0.0": {
+        "dependencies": {
+          "NamespaceGPT.Data": "1.0.0"
+        },
+        "runtime": {
+          "NamespaceGPT.Business.dll": {}
+        }
+      },
+      "NamespaceGPT.Data/1.0.0": {
+        "runtime": {
+          "NamespaceGPT.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NamespaceGPT.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NamespaceGPT.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

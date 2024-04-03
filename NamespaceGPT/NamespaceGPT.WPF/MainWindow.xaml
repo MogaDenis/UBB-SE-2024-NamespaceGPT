@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button Click="Button_Click">Hello</Button>
+        <Label x:Name="label1"></Label>
+        <Label x:Name="label2"></Label>
+        <Label x:Name="label3"></Label>
     </Grid>
 </Window>
