@@ -4,6 +4,6 @@
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public required IAction Action { get; set; } 
+        public string ActionType { get; set; } = string.Empty;
     }
 }

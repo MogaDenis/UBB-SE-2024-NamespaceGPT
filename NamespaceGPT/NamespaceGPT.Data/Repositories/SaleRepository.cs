@@ -1,68 +1,183 @@
-﻿using NamespaceGPT.Data.Models;
+﻿using Microsoft.Data.SqlClient;
+using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
+using System.Data;
 
 namespace NamespaceGPT.Data.Repositories
 {
     public class SaleRepository : ISaleRepository
     {
-        private readonly List<Sale> _sales;
+        private readonly string _connectionString;
 
         public SaleRepository()
         {
-            _sales = [];
+            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
         }
 
         public int AddSale(Sale sale)
         {
-            _sales.Add(sale);
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
 
-            return sale.Id;
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "INSERT INTO Sale (buyerId, listingId) VALUES (@buyerId, @listingId); SELECT SCOPE_IDENTITY()";
+
+            command.Parameters.AddWithValue("@buyerId", sale.BuyerId);
+            command.Parameters.AddWithValue("@listingId", sale.ListingId);
+
+            int newSaleId = Convert.ToInt32(command.ExecuteScalar());
+
+            return newSaleId;
         }
 
         public bool DeleteSale(int id)
         {
-            int index = _sales.FindIndex(sale => sale.Id == id);
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
 
-            if (index == -1) 
-            {
-                return false;
-            }
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "DELETE FROM Sale WHERE Sale.id = @id";
 
-            _sales.RemoveAt(index);
-            return true;
+            command.Parameters.AddWithValue("@id", id);
+
+            int rowsAffected = command.ExecuteNonQuery();
+
+            return rowsAffected > 0;
         }
 
         public IEnumerable<Sale> GetAllPurchasesOfUser(int userId)
         {
-            return _sales.Where(sale => sale.BuyerId == userId);    
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM Sale WHERE Sale.buyerId = @userId";
+
+            command.Parameters.AddWithValue("@userId", userId);
+
+            SqlDataReader reader = command.ExecuteReader();
+            List<Sale> sales = [];
+
+            while (reader.Read())
+            {
+                Sale sale = new()
+                {
+                    Id = reader.GetInt32(0),
+                    BuyerId = reader.GetInt32(1),
+                    ListingId = reader.GetInt32(2)
+                };
+
+                sales.Add(sale);
+            }
+
+            return sales;
         }
 
         public IEnumerable<Sale> GetAllSales()
         {
-            return _sales;
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM Sale";
+
+            SqlDataReader reader = command.ExecuteReader();
+            List<Sale> sales = [];
+
+            while (reader.Read())
+            {
+                Sale sale = new()
+                {
+                    Id = reader.GetInt32(0),
+                    BuyerId = reader.GetInt32(1),
+                    ListingId = reader.GetInt32(2)
+                };
+
+                sales.Add(sale);
+            }
+
+            return sales;
         }
 
         public IEnumerable<Sale> GetAllSalesOfListing(int listingId)
         {
-            return _sales.Where(sale => sale.ListingId == listingId);
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM Sale WHERE Sale.listingId = @listingId";
+
+            command.Parameters.AddWithValue("@listingId", listingId);
+
+            SqlDataReader reader = command.ExecuteReader();
+            List<Sale> sales = [];
+
+            while (reader.Read())
+            {
+                Sale sale = new()
+                {
+                    Id = reader.GetInt32(0),
+                    BuyerId = reader.GetInt32(1),
+                    ListingId = reader.GetInt32(2)
+                };
+
+                sales.Add(sale);
+            }
+
+            return sales;
         }
 
         public Sale? GetSale(int id)
         {
-            return _sales.FirstOrDefault(sale => sale.Id == id);
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM Sale WHERE Sale.id = @id";
+
+            command.Parameters.AddWithValue("@id", id);
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                Sale sale = new()
+                {
+                    Id = reader.GetInt32(0),
+                    BuyerId = reader.GetInt32(1),
+                    ListingId = reader.GetInt32(2)
+                };
+
+                return sale;
+            }
+
+            return null;
         }
 
         public bool UpdateSale(int id, Sale sale)
         {
-            int index = _sales.FindIndex(sale => sale.Id == id);
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
 
-            if (index == -1)
-            {
-                return false;
-            }
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "UPDATE Sale " +
+                                    "SET Sale.buyerId = @userId, Sale.listingId = @listingId " +
+                                    "WHERE Sale.id = @id";
 
-            _sales[index] = sale;
-            return true;
+            command.Parameters.AddWithValue("@userId", sale.BuyerId);
+            command.Parameters.AddWithValue("@listingId", sale.ListingId);
+            command.Parameters.AddWithValue("@id", id);
+
+            int rowsAffected = command.ExecuteNonQuery();
+
+            return rowsAffected > 0;
         }
     }
 }
