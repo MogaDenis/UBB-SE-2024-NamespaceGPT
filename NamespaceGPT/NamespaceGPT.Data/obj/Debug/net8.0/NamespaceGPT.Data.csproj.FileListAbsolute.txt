@@ -11,3 +11,16 @@ D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\Na
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.pdb
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\ref\NamespaceGPT.Data.dll
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.csproj.AssemblyReference.cache
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\bin\Debug\net8.0\NamespaceGPT.Data.deps.json
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\bin\Debug\net8.0\NamespaceGPT.Data.dll
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\bin\Debug\net8.0\NamespaceGPT.Data.pdb
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.csproj.AssemblyReference.cache
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.AssemblyInfoInputs.cache
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.AssemblyInfo.cs
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.csproj.CoreCompileInputs.cache
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.sourcelink.json
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.dll
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\refint\NamespaceGPT.Data.dll
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.pdb
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\ref\NamespaceGPT.Data.dll

@@ -12,7 +12,7 @@ namespace NamespaceGPT.Data.Repositories
         public UserRepository()
         {
             _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
-        }
+        }   
 
         public int AddUser(User user)
         {
@@ -104,22 +104,26 @@ namespace NamespaceGPT.Data.Repositories
 
         public bool UpdateUser(int id, User user)
         {
-            using SqlConnection connection = new(_connectionString);
+            using SqlConnection connection = new SqlConnection(_connectionString);
             connection.Open();
 
             SqlCommand command = connection.CreateCommand();
             command.CommandType = CommandType.Text;
-            command.CommandText = "UPDATE AppUser " +
-                                    "SET AppUser.username = @username, AppUser.password = @password " +
-                                    "WHERE AppUser.id = @id";
+            command.CommandText = "UPDATE AppProduct " +
+                                  "SET name = @name, category = @category, description = @description, brand = @brand, imageURL = @imageURL " +
+                                  "WHERE id = @id";
 
-            command.Parameters.AddWithValue("@username", user.Username);
-            command.Parameters.AddWithValue("@password", user.Password);
-            command.Parameters.AddWithValue("@id", id);
+            command.Parameters.AddWithValue("@name", product.Name);
+            command.Parameters.AddWithValue("@category", product.Category);
+            command.Parameters.AddWithValue("@description", product.Description);
+            command.Parameters.AddWithValue("@brand", product.Brand);
+            command.Parameters.AddWithValue("@imageURL", product.ImageURL);
+            command.Parameters.AddWithValue("@id", productId); // Assuming you have productId variable representing the ID of the product to update
 
             int rowsAffected = command.ExecuteNonQuery();
 
             return rowsAffected > 0;
+
         }
     }
 }

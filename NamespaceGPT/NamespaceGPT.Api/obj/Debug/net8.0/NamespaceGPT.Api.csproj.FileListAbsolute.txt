@@ -16,3 +16,21 @@ D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\Na
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\refint\NamespaceGPT.Api.dll
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\NamespaceGPT.Api.pdb
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\ref\NamespaceGPT.Api.dll
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\bin\Debug\net8.0\NamespaceGPT.Api.deps.json
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\bin\Debug\net8.0\NamespaceGPT.Api.dll
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\bin\Debug\net8.0\NamespaceGPT.Api.pdb
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\bin\Debug\net8.0\NamespaceGPT.Business.dll
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\bin\Debug\net8.0\NamespaceGPT.Data.dll
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\bin\Debug\net8.0\NamespaceGPT.Business.pdb
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\bin\Debug\net8.0\NamespaceGPT.Data.pdb
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\NamespaceGPT.Api.csproj.AssemblyReference.cache
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\NamespaceGPT.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\NamespaceGPT.Api.AssemblyInfoInputs.cache
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\NamespaceGPT.Api.AssemblyInfo.cs
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\NamespaceGPT.Api.csproj.CoreCompileInputs.cache
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\NamespaceGPT.Api.sourcelink.json
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\Namespac.C278547E.Up2Date
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\NamespaceGPT.Api.dll
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\refint\NamespaceGPT.Api.dll
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\NamespaceGPT.Api.pdb
+D:\Github\UBB-SE-2024-NamespaceGPT\NamespaceGPT\NamespaceGPT.Api\obj\Debug\net8.0\ref\NamespaceGPT.Api.dll
