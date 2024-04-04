@@ -10,3 +10,4 @@ D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\Na
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\refint\NamespaceGPT.Data.dll
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.pdb
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\ref\NamespaceGPT.Data.dll
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.Data\obj\Debug\net8.0\NamespaceGPT.Data.csproj.AssemblyReference.cache

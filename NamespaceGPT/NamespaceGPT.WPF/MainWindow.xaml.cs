@@ -30,11 +30,15 @@ namespace NamespaceGPT.WPF
             _userController = new UserController(service);
             InitializeComponent();
 
-            var users = _userController.GetAllUsers();
+            var user = new User()
+            {
+                Username = "admin",
+                Password = "admin",
+            };
 
-            label1.Content = users.ElementAt(0).Username;
-            label2.Content = users.ElementAt(1).Username;
-            label3.Content = users.ElementAt(2).Username;
+            int id = _userController.AddUser(user);
+
+            label1.Content = id;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
