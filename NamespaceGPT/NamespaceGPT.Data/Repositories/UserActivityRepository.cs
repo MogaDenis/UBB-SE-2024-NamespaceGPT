@@ -1,58 +1,126 @@
-﻿using NamespaceGPT.Data.Models;
+﻿using Microsoft.Data.SqlClient;
+using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
+using System.Data;
 
 namespace NamespaceGPT.Data.Repositories
 {
     public class UserActivityRepository : IUserActivityRepository
     {
-        private readonly List<UserActivity> _userActivities;
+        private readonly string _connectionString;
 
         public UserActivityRepository()
         {
-            _userActivities = [];
+            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
         }
 
         public int AddUserActivity(UserActivity userActivity)
         {
-            _userActivities.Add(userActivity);
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
 
-            return userActivity.Id;
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "INSERT INTO UserActivity (userId, actionType) VALUES (@userId, @actionType); SELECT SCOPE_IDENTITY()";
+
+            command.Parameters.AddWithValue("@userId", userActivity.UserId);
+            command.Parameters.AddWithValue("@actionType", userActivity.ActionType);
+
+            int newUserActivityId = Convert.ToInt32(command.ExecuteScalar());
+
+            return newUserActivityId;
         }
 
         public bool DeleteUserActivity(int id)
         {
-            int index = _userActivities.FindIndex(user => user.Id == id);
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
 
-            if (index == -1)
-            {
-                return false;
-            }
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "DELETE FROM UserActivity WHERE UserActivity.id = @id";
 
-            _userActivities.RemoveAt(index);
-            return true;
+            command.Parameters.AddWithValue("@id", id);
+
+            int rowsAffected = command.ExecuteNonQuery();
+
+            return rowsAffected > 0;
         }
 
         public IEnumerable<UserActivity> GetAllUserActivities()
         {
-            return _userActivities;
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM UserActivity";
+
+            SqlDataReader reader = command.ExecuteReader();
+            List<UserActivity> usersActivities = [];
+
+            while (reader.Read())
+            {
+                UserActivity userActivity = new()
+                {
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ActionType = reader.GetString(2)
+                };
+
+                usersActivities.Add(userActivity);
+            }
+
+            return usersActivities;
         }
 
         public IEnumerable<UserActivity> GetUserActivitiesOfUser(int userId)
         {
-            return _userActivities.Where(userActivity => userActivity.UserId == userId);
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM UserActivity WHERE UserActivity.userId = @userId";
+
+            command.Parameters.AddWithValue("@userId", userId);
+
+            SqlDataReader reader = command.ExecuteReader();
+            List<UserActivity> usersActivities = [];
+
+            while (reader.Read())
+            {
+                UserActivity userActivity = new()
+                {
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ActionType = reader.GetString(2)
+                };
+
+                usersActivities.Add(userActivity);
+            }
+
+            return usersActivities;
         }
 
         public bool UpdateUserActivity(int id, UserActivity userActivity)
         {
-            int index = _userActivities.FindIndex(user => user.Id == id);
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
 
-            if (index == -1)
-            {
-                return false;
-            }
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "UPDATE UserActivity " +
+                                    "SET UserActivity.userId = @userId, UserActivity.actionType = @actionType " +
+                                    "WHERE UserActivity.id = @id";
 
-            _userActivities[index] = userActivity;  
-            return true;
+            command.Parameters.AddWithValue("@userId", userActivity.UserId);
+            command.Parameters.AddWithValue("@actionType", userActivity.ActionType);
+            command.Parameters.AddWithValue("@id", id);
+
+            int rowsAffected = command.ExecuteNonQuery();
+
+            return rowsAffected > 0;
         }
     }
 }
