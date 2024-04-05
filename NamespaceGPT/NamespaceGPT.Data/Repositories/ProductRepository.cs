@@ -1,18 +1,16 @@
 ﻿using Microsoft.Data.SqlClient;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NamespaceGPT.Data.Repositories
 {
     public class ProductRepository : IProductRepository
     {
         private readonly string _connectionString;
+
+        //Pentru product attributes am ales ca in baza de date sa fie reprezentat ca string
+        //e.g. in DB: attributes(str): attr1;attr2;attr3; 
 
         public ProductRepository()
         {
@@ -26,14 +24,16 @@ namespace NamespaceGPT.Data.Repositories
 
             SqlCommand command = connection.CreateCommand();
             command.CommandType = CommandType.Text;
-            command.CommandText = "INSERT INTO AppProduct (name,category,description,brand,imageURL); SELECT SCOPE_INDENTITIY()";
+            command.CommandText = "INSERT INTO Product (name,category,description,brand,imageURL, attributes); SELECT SCOPE_INDENTITIY()";
+
 
             command.Parameters.AddWithValue("@name", product.Name);
             command.Parameters.AddWithValue("@category", product.Category);
             command.Parameters.AddWithValue("@description", product.Description);
             command.Parameters.AddWithValue("@brand", product.Brand);
             command.Parameters.AddWithValue("@imageURL", product.ImageURL);
-            //product.Attributes ? 
+            command.Parameters.AddWithValue("@attributes", product.Attributes); // e corect? 
+
 
             int newProductID = Convert.ToInt32(command.ExecuteScalar());
 
@@ -78,7 +78,7 @@ namespace NamespaceGPT.Data.Repositories
                     Description = reader.GetString(3),
                     Brand = reader.GetString(4),
                     ImageURL = reader.GetString(5),
-                    Attributes = [] // ce fac aici?
+                    Attributes = reader.GetString(6).Split(';').ToList()
                 };
 
                 products.Add(product);
@@ -110,7 +110,7 @@ namespace NamespaceGPT.Data.Repositories
                     Description = reader.GetString(3),
                     Brand = reader.GetString(4),
                     ImageURL = reader.GetString(5),
-                    Attributes = [] // ce fac aici?
+                    Attributes = reader.GetString(6).Split(';').ToList()
                 };
 
                 return product;
@@ -128,15 +128,15 @@ namespace NamespaceGPT.Data.Repositories
             command.CommandType = CommandType.Text;
             command.CommandText = "UPDATE AppProduct " +
                                   "SET name = @name, category = @category, description = @description, brand = @brand, imageURL = @imageURL " +
-                                  "WHERE id = @id";
+                                  "attributes = @attributes WHERE id = @id";
 
             command.Parameters.AddWithValue("@name", product.Name);
             command.Parameters.AddWithValue("@category", product.Category);
             command.Parameters.AddWithValue("@description", product.Description);
             command.Parameters.AddWithValue("@brand", product.Brand);
             command.Parameters.AddWithValue("@imageURL", product.ImageURL);
-            command.Parameters.AddWithValue("@id", product.Id); 
-            // la attribues ce fac ?
+            command.Parameters.AddWithValue("@id", product.Id);
+            command.Parameters.AddWithValue("@attribues", product.Attributes); // nu sunt sigur nici aici
 
             int rowsAffected = command.ExecuteNonQuery();
 

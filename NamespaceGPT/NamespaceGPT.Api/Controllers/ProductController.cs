@@ -1,6 +1,5 @@
 ﻿using NamespaceGPT.Business.Services.Interfaces;
 using NamespaceGPT.Data.Models;
-using System.Collections.Generic;
 
 namespace NamespaceGPT.Api.Controllers
 {

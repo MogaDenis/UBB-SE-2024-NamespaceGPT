@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|solutionrelative:namespacegpt.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.api\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|solutionrelative:namespacegpt.api\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|solutionrelative:namespacegpt.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|solutionrelative:namespacegpt.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.business\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.business\\services\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.business\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +25,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16389D31-131E-43B8-97E4-21AE97C37FDA}|NamespaceGPT.Api\\NamespaceGPT.Api.csproj|solutionrelative:namespacegpt.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.business\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,36 +59,12 @@
       "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.business\\services\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\interfaces\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.business\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}|NamespaceGPT.Business\\NamespaceGPT.Business.csproj|solutionrelative:namespacegpt.business\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\interfaces\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\repositories\\interfaces\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|solutionrelative:namespacegpt.data\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36109174-6EBB-4130-9EFB-AC4410317027}|NamespaceGPT.Data\\NamespaceGPT.Data.csproj|d:\\github\\ubb-se-2024-namespacegpt\\namespacegpt\\namespacegpt.data\\repositories\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -146,80 +146,80 @@
       "DocumentGroups": [
         {
           "DockedHeight": 293,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ReviewController.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\ReviewController.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Api\\Controllers\\ReviewController.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\ReviewController.cs",
               "RelativeToolTip": "NamespaceGPT.Api\\Controllers\\ReviewController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T17:06:04.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ReviewService.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\ReviewService.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\ReviewService.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\ReviewService.cs",
               "RelativeToolTip": "NamespaceGPT.Business\\Services\\ReviewService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T17:04:42.342Z"
+              "WhenOpened": "2024-04-04T17:04:42.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "IReviewService.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\IReviewService.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\Interfaces\\IReviewService.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\IReviewService.cs",
               "RelativeToolTip": "NamespaceGPT.Business\\Services\\Interfaces\\IReviewService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T17:03:42.917Z"
+              "WhenOpened": "2024-04-04T17:03:42.917Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\ProductRepository.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\ProductRepository.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\ProductRepository.cs",
               "RelativeToolTip": "NamespaceGPT.Data\\Repositories\\ProductRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCgAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T16:46:14.374Z"
+              "WhenOpened": "2024-04-04T16:46:14.374Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "ReviewRepository.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\ReviewRepository.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\ReviewRepository.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\ReviewRepository.cs",
               "RelativeToolTip": "NamespaceGPT.Data\\Repositories\\ReviewRepository.cs",
-              "ViewState": "AQIAALUAAAAAAAAAAADwv8UAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T16:46:06.879Z"
+              "WhenOpened": "2024-04-04T16:46:06.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\Interfaces\\IProductRepository.cs",
@@ -231,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "IReviewRepository.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Repositories\\Interfaces\\IReviewRepository.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Data\\Repositories\\Interfaces\\IReviewRepository.cs",
@@ -243,64 +243,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "Review.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\Review.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Data\\Models\\Review.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\Review.cs",
               "RelativeToolTip": "NamespaceGPT.Data\\Models\\Review.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T16:42:31.816Z"
+              "WhenOpened": "2024-04-04T16:42:31.816Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Api\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\ProductController.cs",
               "RelativeToolTip": "NamespaceGPT.Api\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T16:39:03.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\ProductService.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\ProductService.cs",
               "RelativeToolTip": "NamespaceGPT.Business\\Services\\ProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T16:36:35.397Z"
+              "WhenOpened": "2024-04-04T16:36:35.397Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "IProductService.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\IProductService.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\Interfaces\\IProductService.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\Interfaces\\IProductService.cs",
               "RelativeToolTip": "NamespaceGPT.Business\\Services\\Interfaces\\IProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T16:35:47.185Z"
+              "WhenOpened": "2024-04-04T16:35:47.185Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\Product.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Data\\Models\\Product.cs",
               "ToolTip": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Data\\Models\\Product.cs",
               "RelativeToolTip": "NamespaceGPT.Data\\Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAUwBAAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA4wBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:33:18.189Z"
+              "WhenOpened": "2024-04-04T15:33:18.189Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -316,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "UserActivityService.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\UserActivityService.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\UserActivityService.cs",
@@ -400,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "SaleService.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\SaleService.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\SaleService.cs",
@@ -495,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Api\\Controllers\\UserController.cs",
@@ -507,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Github\\UBB-SE-2024-NamespaceGPT\\NamespaceGPT\\NamespaceGPT.Business\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "NamespaceGPT.Business\\Services\\UserService.cs",

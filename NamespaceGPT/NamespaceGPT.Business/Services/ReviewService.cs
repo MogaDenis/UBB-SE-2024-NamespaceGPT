@@ -1,8 +1,5 @@
 ﻿using NamespaceGPT.Business.Services.Interfaces;
 using NamespaceGPT.Data.Models;
-using NamespaceGPT.Data.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
 
 namespace NamespaceGPT.Business.Services
 {
