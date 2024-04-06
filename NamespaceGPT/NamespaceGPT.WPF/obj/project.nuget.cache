@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dQCtUkqO9a3ILp0+Llv1WVkGIeGmNyp7k7pyb0x6CEzxneh/VnfHXsK+M65D4yASOUcymD72x7YIGXrpqeL44A==",
+  "dgSpecHash": "x6zCrpo7/NDs7Uk2cOlCK0UmXb03882d2YVBo+7lYmr8KL8X7SpASfwRfKzBEAKXEk3VR3Fp+sanBGqTURCs4w==",
   "success": true,
   "projectFilePath": "D:\\Faculty Materials\\Second Year\\Second Semester\\SE\\NamespaceGPT\\NamespaceGPT\\NamespaceGPT.WPF\\NamespaceGPT.WPF.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\Denis\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.0\\microsoft.data.sqlclient.5.2.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.2.0\\microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\microsoft.identity.client\\4.56.0\\microsoft.identity.client.4.56.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.56.0\\microsoft.identity.client.extensions.msal.4.56.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\microsoft.identity.client.nativeinterop\\0.13.8\\microsoft.identity.client.nativeinterop.0.13.8.nupkg.sha512",

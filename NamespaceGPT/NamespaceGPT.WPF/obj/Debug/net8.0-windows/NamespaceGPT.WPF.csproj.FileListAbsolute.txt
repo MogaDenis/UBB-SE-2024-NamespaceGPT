@@ -74,3 +74,15 @@ D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\Na
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\AdminDashboard.baml
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\AdminDashboard.g.cs
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\UsersView.g.cs
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\UsersView.baml
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\ProductsView.g.cs
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\ProductsView.baml
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\ListingsView.g.cs
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\MarketplacesView.g.cs
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\ListingsView.baml
+D:\Faculty Materials\Second Year\Second Semester\SE\NamespaceGPT\NamespaceGPT\NamespaceGPT.WPF\obj\Debug\net8.0-windows\MarketplacesView.baml

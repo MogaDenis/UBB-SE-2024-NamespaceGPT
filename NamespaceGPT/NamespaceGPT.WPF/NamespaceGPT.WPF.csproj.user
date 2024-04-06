@@ -2,12 +2,30 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <ApplicationDefinition Update="App.xaml">
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
+    <Compile Update="AdminDashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UsersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProductsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListingsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MarketplacesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UsersView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
