@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NamespaceGPT.Api.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,14 @@ namespace NamespaceGPT.WPF
     /// </summary>
     public partial class ListingsView : UserControl
     {
-        public ListingsView()
+        private readonly ListingController _listingController;
+
+        public ListingsView(ListingController listingController)
         {
+            _listingController = listingController;
             InitializeComponent();
+
+            ListingsDataGrid.ItemsSource = _listingController.GetAllListings();
         }
     }
 }

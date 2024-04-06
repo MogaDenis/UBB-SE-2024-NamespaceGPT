@@ -28,7 +28,7 @@ namespace NamespaceGPT.Api.Controllers
             return _listingService.DeleteListing(id);
         }
 
-        public IEnumerable<Listing> GetAlllistings()
+        public IEnumerable<Listing> GetAllListings()
         {
             return _listingService.GetAllListings();
         }

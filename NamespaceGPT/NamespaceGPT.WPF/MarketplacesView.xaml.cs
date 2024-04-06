@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NamespaceGPT.Api.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,14 @@ namespace NamespaceGPT.WPF
     /// </summary>
     public partial class MarketplacesView : UserControl
     {
-        public MarketplacesView()
+        private readonly MarketplaceController _marketplaceController;
+
+        public MarketplacesView(MarketplaceController marketplaceController)
         {
+            _marketplaceController = marketplaceController;
             InitializeComponent();
+
+            MarketplacesDataGrid.ItemsSource = _marketplaceController.GetAllMarketplaces();
         }
     }
 }

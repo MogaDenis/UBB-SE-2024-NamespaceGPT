@@ -1,5 +1,6 @@
 ﻿using NamespaceGPT.Api.Controllers;
 using NamespaceGPT.Business.Services;
+using NamespaceGPT.Business.Services.Interfaces;
 using NamespaceGPT.Data.Repositories;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,6 +10,8 @@ namespace NamespaceGPT.WPF
     public partial class MainWindow : Window
     {
         private readonly UserController _userController;
+        private readonly MarketplaceController _marketplaceController;
+        private readonly ListingController _listingController;
 
         public MainWindow()
         {
@@ -16,6 +19,12 @@ namespace NamespaceGPT.WPF
 
             var userService = new UserService(new UserRepository());
             _userController = new UserController(userService);
+
+            var marketplaceService = new MarketplaceService(new MarketplaceRepository());
+            _marketplaceController = new MarketplaceController(marketplaceService);
+
+            var listingService = new ListingService(new ListingRepository());
+            _listingController = new ListingController(listingService);
         }
         private void ShowUsers_Click(object sender, RoutedEventArgs e) 
         {
@@ -31,13 +40,13 @@ namespace NamespaceGPT.WPF
 
         private void ShowListings_Click(object sender, RoutedEventArgs e)
         {
-            ListingsView listingsView = new();
+            ListingsView listingsView = new(_listingController);
             MainFrame.NavigationService.Navigate(listingsView);
         }
 
         private void ShowMarketplaces_Click(object sender, RoutedEventArgs e)
         {
-            MarketplacesView marketplacesView = new();
+            MarketplacesView marketplacesView = new(_marketplaceController);
             MainFrame.NavigationService.Navigate(marketplacesView);
         }
     }

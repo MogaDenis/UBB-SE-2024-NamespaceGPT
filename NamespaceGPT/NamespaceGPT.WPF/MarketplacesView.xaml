@@ -17,7 +17,7 @@
 
                 <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}"/>
 
-                <DataGridTextColumn Header="Country" Width="*" Binding="{Binding Country}"/>
+                <DataGridTextColumn Header="Country" Width="*" Binding="{Binding CountryOfOrigin}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
