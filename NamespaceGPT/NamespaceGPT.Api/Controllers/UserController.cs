@@ -22,6 +22,11 @@ namespace NamespaceGPT.Api.Controllers
             return _userService.AddUser(user);
         }
 
+        public int LoginUser(User user)
+        {
+            return _userService.UserExists(user);   
+        }
+
         public bool DeleteUser(int id)
         {
             return _userService.DeleteUser(id);
