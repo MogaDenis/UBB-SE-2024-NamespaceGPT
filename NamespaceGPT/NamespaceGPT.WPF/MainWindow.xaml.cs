@@ -1,9 +1,7 @@
 ﻿using NamespaceGPT.Api.Controllers;
 using NamespaceGPT.Business.Services;
-using NamespaceGPT.Business.Services.Interfaces;
 using NamespaceGPT.Data.Repositories;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace NamespaceGPT.WPF
 {
@@ -26,6 +24,7 @@ namespace NamespaceGPT.WPF
             var listingService = new ListingService(new ListingRepository());
             _listingController = new ListingController(listingService);
         }
+
         private void ShowUsers_Click(object sender, RoutedEventArgs e) 
         {
             UsersView usersView = new(_userController);

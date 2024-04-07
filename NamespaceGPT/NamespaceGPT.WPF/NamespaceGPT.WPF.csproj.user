@@ -2,7 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="AdminDashboard.xaml.cs">
+    <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UsersView.xaml.cs">
@@ -10,10 +13,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Login.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="AdminDashboard.xaml">
+    <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ProductsView.xaml">
@@ -23,6 +26,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MarketplacesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Register.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UsersView.xaml">
