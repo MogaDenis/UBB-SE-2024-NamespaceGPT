@@ -23,6 +23,12 @@
 
             <!-- Button to Delete Product -->
             <Button Content="View Marketplaces" Grid.Row="3" Margin="5" Padding="10,5" Click="ShowMarketplaces_Click"/>
+
+            <Button Content="View Register" Grid.Row="4" Margin="5" Padding="10,5" Click="ShowRegister_Click"/>
+
+            <Button Content="View Login" Grid.Row="5" Margin="5" Padding="10,5" Click="ShowLogin_Click"/>
+
+            <Button Content="View Fav products" Grid.Row="5" Margin="5" Padding="10,5" Click="ShowFavouriteProducts_Click"/>
         </StackPanel>
 
         <!-- Container for pages -->

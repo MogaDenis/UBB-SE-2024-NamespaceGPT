@@ -18,6 +18,11 @@ namespace NamespaceGPT.Business.Services
             return _userRepository.AddUser(user);
         }
 
+        public int UserExists(User user) 
+        {
+            return _userRepository.UserExists(user);
+        }
+
         public bool DeleteUser(int id)
         {
             return _userRepository.DeleteUser(id);

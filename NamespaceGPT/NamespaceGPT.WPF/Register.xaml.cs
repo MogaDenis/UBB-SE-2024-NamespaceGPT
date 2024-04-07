@@ -1,27 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.IdentityModel.Tokens;
+using NamespaceGPT.Api.Controllers;
+using NamespaceGPT.Data.Models;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace NamespaceGPT.WPF
-{
-    /// <summary>
-    /// Interaction logic for Register.xaml
-    /// </summary>
+{ 
     public partial class Register : Window
     {
-        public Register()
+        private UserController _userController;
+
+        public Register(UserController userController)
         {
+            _userController = userController;
+
             InitializeComponent();
+        }
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+            string username = UsernameTextBox.Text;
+            string password = PasswordTextBox.Password;
+
+            if (username.IsNullOrEmpty() || password.IsNullOrEmpty()) 
+            {
+                return;
+            }
+
+            User newUser = new()
+            {
+                Username = username,
+                Password = password,
+            };
+
+            _userController.AddUser(newUser);
+
+            this.Close();
         }
     }
 }

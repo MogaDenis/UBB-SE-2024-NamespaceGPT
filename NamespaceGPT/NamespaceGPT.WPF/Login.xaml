@@ -13,8 +13,9 @@
             <Label>Username</Label>
             <TextBox x:Name="UsernameTextBox" Margin="10"/>
             <Label>Password</Label>
-            <PasswordBox x:Name="PasswordBox" Margin="10"/>
+            <PasswordBox x:Name="PasswordTextBox" Margin="10"/>
             <Button Content="Login" Click="LoginButton_Click" Margin="10"/>
+                <Label x:Name="LogInLabel" HorizontalAlignment="Center">Not logged in</Label>
         </StackPanel>
         </Border>
         </Grid>
