@@ -1,25 +1,18 @@
 ﻿using NamespaceGPT.Api.Controllers;
-using NamespaceGPT.Business.Services;
-using NamespaceGPT.Data.Repositories;
 using System.Windows;
-using System.Windows.Controls;
 
-namespace NamespaceGPT.WPF
+namespace NamespaceGPT.WPF.Admin
 {
-    public partial class MainWindow : Window
+    public partial class AdminDashboard : Window
     {
-        private readonly UserController _userController;
-
-        public MainWindow()
+        public AdminDashboard()
         {
-            InitializeComponent();
-
-            var userService = new UserService(new UserRepository());
-            _userController = new UserController(userService);
+            InitializeComponent();  
         }
-        private void ShowUsers_Click(object sender, RoutedEventArgs e) 
+
+        private void ShowUsers_Click(object sender, RoutedEventArgs e)
         {
-            UsersView usersView = new(_userController);
+            UsersView usersView = new();
             MainFrame.NavigationService.Navigate(usersView);
         }
 

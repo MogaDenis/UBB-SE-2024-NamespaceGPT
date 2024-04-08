@@ -15,9 +15,9 @@ namespace NamespaceGPT.Data.Repositories
     {
         private readonly string _connectionString;
 
-        MarketplaceRepository()
+        public MarketplaceRepository()
         {
-            _connectionString = "Server=DESKTOP-DASUQ97\\SQLEXPRESS;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
         }
 
         public int AddMarketplace(Marketplace marketplace)

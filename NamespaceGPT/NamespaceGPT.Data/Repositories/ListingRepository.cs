@@ -14,9 +14,9 @@ namespace NamespaceGPT.Data.Repositories
     {
         private readonly string _connectionString;
 
-        ListingRepository()
+        public ListingRepository()
         {
-            _connectionString = "Server=DESKTOP-DASUQ97\\SQLEXPRESS;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
         }
 
         public int AddListing(Listing listing)
@@ -72,7 +72,7 @@ namespace NamespaceGPT.Data.Repositories
                     Id = reader.GetInt32(0),
                     ProductId = reader.GetInt32(1),
                     MarketplaceId = reader.GetInt32(2),
-                    Price = reader.GetFloat(3)
+                    Price = reader.GetDouble(3),
                 };
 
                 listings.Add(listing);

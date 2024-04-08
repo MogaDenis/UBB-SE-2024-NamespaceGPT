@@ -19,13 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="ProductsView.xaml.cs">
+    <Compile Update="Admin\ProductsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ListingsView.xaml.cs">
+    <Compile Update="Admin\ListingsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MarketplacesView.xaml.cs">
+    <Compile Update="Admin\MarketplacesView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -31,6 +31,28 @@ namespace NamespaceGPT.Data.Repositories
             return newUserId;
         }
 
+        public int UserExists(User user) 
+        {
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT AppUser.id FROM AppUser WHERE AppUser.username = @username AND AppUser.password = @password";
+
+            command.Parameters.AddWithValue("@username", user.Username);
+            command.Parameters.AddWithValue("@password", user.Password);
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                return reader.GetInt32(0);
+            }
+
+            return -1;
+        }
+
         public bool DeleteUser(int id)
         {
             using SqlConnection connection = new(_connectionString);

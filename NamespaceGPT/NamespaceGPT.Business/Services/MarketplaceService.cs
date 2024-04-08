@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NamespaceGPT.Business.Services
 {
-    internal class MarketplaceService : IMarketplaceService
+    public class MarketplaceService : IMarketplaceService
     {
         private readonly IMarketplaceRepository _marketplacerepository;
 

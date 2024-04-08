@@ -27,7 +27,7 @@ namespace NamespaceGPT.Api.Controllers
             return _marketplaceService.DeleteMarketplace(id);
         }
 
-        public IEnumerable<Marketplace> GetAllmarketplaces()
+        public IEnumerable<Marketplace> GetAllMarketplaces()
         {
             return _marketplaceService.GetAllMarketplaces();
         }
