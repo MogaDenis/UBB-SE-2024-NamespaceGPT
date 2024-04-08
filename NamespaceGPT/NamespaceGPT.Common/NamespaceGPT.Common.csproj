@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\NamespaceGPT.Common\NamespaceGPT.Common.csproj" />
-    <ProjectReference Include="..\NamespaceGPT.Data\NamespaceGPT.Data.csproj" />
-  </ItemGroup>
-
 </Project>

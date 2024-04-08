@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamespaceGPT.Data", "NamespaceGPT.Data\NamespaceGPT.Data.csproj", "{36109174-6EBB-4130-9EFB-AC4410317027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamespaceGPT.Data", "NamespaceGPT.Data\NamespaceGPT.Data.csproj", "{36109174-6EBB-4130-9EFB-AC4410317027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamespaceGPT.WPF", "NamespaceGPT.WPF\NamespaceGPT.WPF.csproj", "{9481ED70-712E-4199-B732-1A4BA4B61BC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamespaceGPT.WPF", "NamespaceGPT.WPF\NamespaceGPT.WPF.csproj", "{9481ED70-712E-4199-B732-1A4BA4B61BC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamespaceGPT.Business", "NamespaceGPT.Business\NamespaceGPT.Business.csproj", "{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamespaceGPT.Business", "NamespaceGPT.Business\NamespaceGPT.Business.csproj", "{B71646AE-CB7F-4C5B-B6F4-61EB216A4567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamespaceGPT.Api", "NamespaceGPT.Api\NamespaceGPT.Api.csproj", "{16389D31-131E-43B8-97E4-21AE97C37FDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamespaceGPT.Api", "NamespaceGPT.Api\NamespaceGPT.Api.csproj", "{16389D31-131E-43B8-97E4-21AE97C37FDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamespaceGPT.Common", "NamespaceGPT.Common\NamespaceGPT.Common.csproj", "{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{16389D31-131E-43B8-97E4-21AE97C37FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16389D31-131E-43B8-97E4-21AE97C37FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16389D31-131E-43B8-97E4-21AE97C37FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
