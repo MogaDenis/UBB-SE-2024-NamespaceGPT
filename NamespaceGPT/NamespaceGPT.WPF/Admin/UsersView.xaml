@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="NamespaceGPT.WPF.ListingsView"
+﻿<UserControl x:Class="NamespaceGPT.WPF.Admin.UsersView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,19 +8,14 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Border Background="LightGray" Padding="10">
-            <TextBlock Text="Listings" FontSize="20" FontWeight="Bold"/>
+            <TextBlock Text="Users" FontSize="20" FontWeight="Bold"/>
         </Border>
-
-        <DataGrid x:Name="ListingsDataGrid" AutoGenerateColumns="False" Margin="0,40,0,0">
+        
+        <DataGrid x:Name="UsersDataGrid" AutoGenerateColumns="False" Margin="0,40,0,0">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Width="*" Binding="{Binding Id}"/>
 
-                <DataGridTextColumn Header="ProductId" Width="*" Binding="{Binding ProductId}"/>
-
-
-                <DataGridTextColumn Header="MarketplaceId" Width="*" Binding="{Binding MarketplaceId}"/>
-
-                <DataGridTextColumn Header="Price" Width="*" Binding="{Binding Price}"/>
+                <DataGridTextColumn Header="Username" Width="*" Binding="{Binding Username}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

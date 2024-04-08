@@ -3,17 +3,19 @@ using NamespaceGPT.Api.Controllers;
 using NamespaceGPT.Data.Models;
 using System.Windows;
 
-namespace NamespaceGPT.WPF
-{ 
+namespace NamespaceGPT.WPF.Authentication
+{
     public partial class Register : Window
     {
-        private UserController _userController;
-
-        public Register(UserController userController)
+        public Register()
         {
-            _userController = userController;
-
             InitializeComponent();
+        }
+
+        private void OpenLogin()
+        {
+            Login login = new();
+            login.Show();
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
@@ -21,7 +23,7 @@ namespace NamespaceGPT.WPF
             string username = UsernameTextBox.Text;
             string password = PasswordTextBox.Password;
 
-            if (username.IsNullOrEmpty() || password.IsNullOrEmpty()) 
+            if (username.IsNullOrEmpty() || password.IsNullOrEmpty())
             {
                 return;
             }
@@ -32,9 +34,16 @@ namespace NamespaceGPT.WPF
                 Password = password,
             };
 
-            _userController.AddUser(newUser);
+            Controller.GetInstance().UserController.AddUser(newUser);
 
-            this.Close();
+            OpenLogin();
+            Close();
+        }
+
+        private void SigninButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+            OpenLogin();
         }
     }
 }

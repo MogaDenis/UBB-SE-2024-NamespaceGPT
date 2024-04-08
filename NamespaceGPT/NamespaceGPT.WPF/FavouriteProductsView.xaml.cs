@@ -11,24 +11,17 @@ namespace NamespaceGPT.WPF
         private readonly FavouriteProductController _favouriteProductController;
         private readonly int _userId;
 
-        public ObservableCollection<Product> FavouriteProducts { get; set; }
+        public ObservableCollection<Product> FavouriteProducts { get; set; } = [];
 
-        public FavouriteProductsView(int userId, ProductController productController, FavouriteProductController favouriteProductController)
+        public FavouriteProductsView(int userId)
         {
             _userId = userId;
-            _productController = productController; 
-            _favouriteProductController = favouriteProductController;
+            _productController = Controller.GetInstance().ProductController; 
+            _favouriteProductController = Controller.GetInstance().FavouriteProductController;
 
             InitializeFavouriteProductsList();
 
             InitializeComponent();
-
-            //FavouriteProducts = new ObservableCollection<Product>() 
-            //{ 
-            //    new() { Id = 1, Name = "Product 1" },
-            //    new() { Id = 2, Name = "Product 2" },
-            //    new() { Id = 3, Name = "Product 3" }              
-            //};
 
             DataContext = this;
         }

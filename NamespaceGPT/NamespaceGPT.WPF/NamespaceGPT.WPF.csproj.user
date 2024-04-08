@@ -2,42 +2,51 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Admin\AdminDashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="FavouriteProductsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Login.xaml.cs">
+    <Compile Update="Authentication\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Register.xaml.cs">
+    <Compile Update="Authentication\Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UsersView.xaml.cs">
+    <Compile Update="Admin\UsersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowTemplate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Admin\AdminDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="FavouriteProductsView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login.xaml">
+    <Page Update="Authentication\Login.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Admin\ProductsView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ProductsView.xaml">
+    <Page Update="Admin\ListingsView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ListingsView.xaml">
+    <Page Update="Admin\MarketplacesView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MarketplacesView.xaml">
+    <Page Update="Authentication\Register.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Register.xaml">
+    <Page Update="Admin\UsersView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UsersView.xaml">
+    <Page Update="WindowTemplate.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
