@@ -86,7 +86,11 @@ namespace NamespaceGPT.WPF
             FavouriteProductsView favouriteProductsView = new(7, _productController, _favouriteProductController);
             MainFrame.NavigationService.Navigate(favouriteProductsView);
         }
-
+        private void ShowReviews_Click(object sender, RoutedEventArgs e)
+        {
+            ReviewsView reviewsView = new(_reviewController);
+            MainFrame.NavigationService.Navigate(reviewsView);
+        }
 
     }
 }

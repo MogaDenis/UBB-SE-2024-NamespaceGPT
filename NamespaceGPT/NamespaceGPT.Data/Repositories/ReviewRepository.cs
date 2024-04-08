@@ -8,7 +8,7 @@ public class ReviewRepository : IReviewRepository
 
     public ReviewRepository()
     {
-        _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+        _connectionString = "Server=DESKTOP-950BPB6\\SQLEXPRESS;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
     }
 
     public int AddReview(Review review)
