@@ -317,7 +317,7 @@ namespace NamespaceGPT.Data.Repositories
                                           "SET UserId = @UserId, " +
                                           "ProductId = @ProductId, " +
                                           "MarketplaceId = @MarketplaceId " +
-                                          "WHERE Id = @Id";
+                                          "WHERE id = @Id";
                     command.Parameters.AddWithValue("@UserId", backInStockAlert.UserId);
                     command.Parameters.AddWithValue("@ProductId", backInStockAlert.ProductId);
                     command.Parameters.AddWithValue("@MarketplaceId", backInStockAlert.MarketplaceId);
@@ -328,7 +328,7 @@ namespace NamespaceGPT.Data.Repositories
                     command.CommandText = "UPDATE NewProductAlerts " +
                                           "SET UserId = @UserId, " +
                                           "ProductId = @ProductId " +
-                                          "WHERE Id = @Id";
+                                          "WHERE id = @Id";
                     command.Parameters.AddWithValue("@UserId", newProductAlert.UserId);
                     command.Parameters.AddWithValue("@ProductId", newProductAlert.ProductId);
                     command.Parameters.AddWithValue("@Id", id);
@@ -340,7 +340,7 @@ namespace NamespaceGPT.Data.Repositories
                                           "ProductId = @ProductId, " +
                                           "OldPrice = @OldPrice, " +
                                           "NewPrice = @NewPrice " +
-                                          "WHERE Id = @Id";
+                                          "WHERE id = @Id";
                     command.Parameters.AddWithValue("@UserId", priceDropAlert.UserId);
                     command.Parameters.AddWithValue("@ProductId", priceDropAlert.ProductId);
                     command.Parameters.AddWithValue("@OldPrice", priceDropAlert.OldPrice);
