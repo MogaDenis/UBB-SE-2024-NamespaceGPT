@@ -48,9 +48,10 @@ namespace NamespaceGPT.WPF.Authentication
             // Navigate to the main window
 
             // Temporarly, for testing purposes...
-            WindowTemplate windowTemplate = new();
-            windowTemplate.Show();
-            windowTemplate.ShowFavouriteProductsView(); 
+            MainHomeWindow mainWindow = new();
+            mainWindow.Show();
+
+            Session.GetInstance().Frame = mainWindow.MainFrame;
             Close();
         }
 
