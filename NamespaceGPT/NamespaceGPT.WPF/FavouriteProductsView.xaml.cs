@@ -18,10 +18,9 @@ namespace NamespaceGPT.WPF
             _userId = userId;
             _productController = Controller.GetInstance().ProductController;
             _favouriteProductController = Controller.GetInstance().FavouriteProductController;
+            //InitializeFavouriteProductsList();
 
-            InitializeFavouriteProductsList();
-
-            InitializeComponent();
+            //InitializeComponent();
 
             DataContext = this;
         }
