@@ -6,20 +6,32 @@
              xmlns:local="clr-namespace:NamespaceGPT.WPF"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Grid Background="#0b184b">
         <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <ListBox ItemsSource="{Binding FavouriteProducts}">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Foreground="White" FontSize="18" Text="Your favourite products:" Margin="10"/>
+                <ListBox Background="Transparent" BorderThickness="0" ItemsSource="{Binding FavouriteProducts}">
+                    
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="#262a46" Margin="5" Padding="5">
+                                <StackPanel Orientation="Horizontal">
 
-                            <Image Source="{Binding ImageURL}" Width="100" Height="100" Stretch="Uniform"/>
-                            <TextBlock Text="{Binding Name}" Margin="5"/>
-                            
-                        </StackPanel>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+                                    <Image Source="{Binding ImageURL}" Width="100" Height="100" Stretch="Uniform" Margin="0,0,10,0"/>
+                                    <TextBlock Foreground="White" FontSize="24" VerticalAlignment="Center" Text="{Binding Name}" Margin="5"/>
+
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
         </ScrollViewer>
     </Grid>
 </UserControl>

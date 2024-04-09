@@ -11,7 +11,8 @@ namespace NamespaceGPT.Data.Repositories
 
         public SaleRepository()
         {
-            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
 
         public int AddSale(Sale sale)

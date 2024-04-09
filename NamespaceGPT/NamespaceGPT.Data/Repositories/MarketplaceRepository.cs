@@ -11,7 +11,8 @@ namespace NamespaceGPT.Data.Repositories
 
         public MarketplaceRepository()
         {
-            _connectionString = "Server=LAPTOP-EHFIU8C5\\SQLEXPRESS;Database=ISS;Trusted_Connection=True;TrustServerCertificate=True";
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
 
         public int AddMarketplace(Marketplace marketplace)

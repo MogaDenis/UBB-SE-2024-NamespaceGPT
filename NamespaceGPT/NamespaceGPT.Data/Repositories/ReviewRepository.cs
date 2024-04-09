@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using NamespaceGPT.Data;
 using NamespaceGPT.Data.Models;
 using System.Data;
 
@@ -8,7 +9,8 @@ public class ReviewRepository : IReviewRepository
 
     public ReviewRepository()
     {
-        _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+        ConfigurationService configurationService = new();
+        _connectionString = configurationService.GetConnectionString();
     }
 
     public int AddReview(Review review)

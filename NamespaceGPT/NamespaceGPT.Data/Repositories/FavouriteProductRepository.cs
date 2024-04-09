@@ -8,10 +8,11 @@ namespace NamespaceGPT.Data.Repositories
     public class FavouriteProductRepository : IFavouriteProductRepository
     {
         private readonly string _connectionString;
-
+       
         public FavouriteProductRepository()
         {
-            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
 
         public int AddFavouriteProduct(FavouriteProduct favouriteProduct)

@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="NamespaceGPT.WPF.ProductPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NamespaceGPT.WPF"
+             mc:Ignorable="d" Height="759" Width="941">
+    <Grid Margin="-59,0,-316,-583" Background="#FF0B184B" ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="185*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160*"/>
+            <RowDefinition Height="422*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="677*"/>
+        </Grid.RowDefinitions>
+        <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Home Page" VerticalAlignment="Top" Width="184" Background="{x:Null}" Foreground="White" FontSize="35" Height="49" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="ProductName" HorizontalAlignment="Left" Margin="17,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="561" Text="PRODUCT NAME" FontSize="24" Background="#FF0B184B" Foreground="White" Height="34" Grid.Row="1" Grid.Column="1"/>
+        <Image Source="{Binding Product.ImageURL}"  x:Name="ProductImage" HorizontalAlignment="Left" Height="422" Margin="17,66,0,0" VerticalAlignment="Top" Width="472" IsEnabled="False" Stretch="UniformToFill" Grid.RowSpan="2" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="ProductDescription" Margin="17,61,342,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Height="277" Grid.Row="3" Background="#FF0B184B" Foreground="White" FontSize="30" Grid.Column="1"/>
+        <TextBox x:Name="ProductPrice" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Price box" VerticalAlignment="Center" Width="152" FontSize="26" Background="#FF0B184B" Foreground="White" Height="38" Grid.Row="1" Grid.Column="1" Margin="561,0,0,0"/>
+        <TextBox HorizontalAlignment="Left" Margin="561,128,0,0" TextWrapping="Wrap" Text="Starting at" VerticalAlignment="Top" Width="152" FontSize="24" FontWeight="Bold" Background="#FF0B184B" Foreground="White" Height="34" Grid.Row="1" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="879,128,0,0" TextWrapping="Wrap" Text="Available on:" VerticalAlignment="Top" Width="196" FontSize="26" RenderTransformOrigin="1.041,-0.574" Background="#FF0B184B" Foreground="White" Height="37" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="ReviewButton" Content="See reviews" HorizontalAlignment="Left" Margin="41,464,0,0" Grid.Row="3" VerticalAlignment="Top" Height="98" Width="217" FontSize="24" Background="#FF0B184B" Foreground="White" Click="Button_Click" Grid.Column="1"/>
+        <ListBox ItemsSource="{Binding Marketplaces}" Margin="879,176,69,42" Grid.RowSpan="2" Grid.Row="1" Grid.Column="1">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Background="#262a46" Margin="5" Padding="5">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Foreground="White" FontSize="18" VerticalAlignment="Center" Text="{Binding Name}" Margin="5"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+
+    </Grid>
+</UserControl>

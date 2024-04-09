@@ -11,7 +11,9 @@ namespace NamespaceGPT.Data.Repositories
 
         public UserRepository()
         {
-            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
 
         public int AddUser(User user)

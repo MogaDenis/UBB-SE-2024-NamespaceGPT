@@ -1,12 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NamespaceGPT.Data.Repositories
 {
@@ -16,7 +11,8 @@ namespace NamespaceGPT.Data.Repositories
 
         public ListingRepository()
         {
-            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
 
         public int AddListing(Listing listing)
@@ -72,7 +68,7 @@ namespace NamespaceGPT.Data.Repositories
                     Id = reader.GetInt32(0),
                     ProductId = reader.GetInt32(1),
                     MarketplaceId = reader.GetInt32(2),
-                    Price = reader.GetDouble(3),
+                    Price = reader.GetInt32(3),
                 };
 
                 listings.Add(listing);
@@ -101,7 +97,7 @@ namespace NamespaceGPT.Data.Repositories
                     Id = reader.GetInt32(0),
                     ProductId = reader.GetInt32(1),
                     MarketplaceId = reader.GetInt32(2),
-                    Price = reader.GetFloat(3)
+                    Price = reader.GetInt32(3)
                 };
 
                 return listing;

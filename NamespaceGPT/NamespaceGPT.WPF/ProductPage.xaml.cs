@@ -1,26 +1,26 @@
 ﻿using NamespaceGPT.Api.Controllers;
 using NamespaceGPT.Data.Models;
-using System.Windows.Controls;
-using System.Windows.Forms;
+using System.Collections.ObjectModel;
+using UserControl = System.Windows.Controls.UserControl;
 
 
-namespace NamespaceGPT.WPF.ProductPage
+namespace NamespaceGPT.WPF
 {
     public partial class ProductPage : UserControl
     {
-        private readonly int _userId;
-        Product product;
+        public Product Product { get; set; }
         private readonly ListingController _listingController;
         private readonly ProductController _productController;
         private readonly MarketplaceController _marketplaceController;
 
+        public ObservableCollection<Marketplace> Marketplaces { get; set; } = [];
+
         public ProductPage(int productId)
         {
-            _userId = userId;
             _listingController = Controller.GetInstance().ListingController;
             _productController = Controller.GetInstance().ProductController;
             _marketplaceController = Controller.GetInstance().MarketplaceController;
-            product = _productController.GetProduct(_userId);
+            Product = _productController.GetProduct(productId);
 
             InitializeComponent();
             InitializeProductDetails();
@@ -28,16 +28,16 @@ namespace NamespaceGPT.WPF.ProductPage
 
         private void InitializeProductDetails()
         {
-            this.ProductName.Text = product.Name;
-            this.ProductDescription.Text = product.Description;
+            this.ProductName.Text = Product.Name;
+            this.ProductDescription.Text = Product.Description;
 
 
             //Get price
-            double min_price = 100000000;
+            int min_price = 100000000;
             IEnumerable<Listing> lisitngs = _listingController.GetAllListings();
             foreach(Listing listing in lisitngs)
             {
-                if(listing.ProductId == product.Id)
+                if(listing.ProductId == Product.Id)
                 {
                     if(listing.Price < min_price)
                         min_price = listing.Price; break;
@@ -48,15 +48,17 @@ namespace NamespaceGPT.WPF.ProductPage
             //available on list
             //select name from marketplace inner join listing on marketplace.id = listing.marketplace
             //inner join product on listing.product = product.id
-            List<string> marketplaceNames = 
+            List<Marketplace> marketplaceNames = 
                 (
             from marketplace in _marketplaceController.GetAllMarketplaces()
             join listing in _listingController.GetAllListings() on marketplace.Id equals listing.MarketplaceId
             join product in _productController.GetAllProducts() on listing.ProductId equals product.Id
-            select marketplace.Name)
+            select marketplace)
             .ToList();
 
-            this.AvailableList.AddRange(marketplaceNames); 
+            foreach (Marketplace marketplace in marketplaceNames)
+                Marketplaces.Add(marketplace);
+
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)

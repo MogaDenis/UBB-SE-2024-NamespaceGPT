@@ -1,0 +1,64 @@
+﻿using NamespaceGPT.Data.Models;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Forms;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace NamespaceGPT.WPF
+{
+    public partial class CompareProductsView : Page, INotifyPropertyChanged
+    {
+        public Product Product1 { get; set; }
+        public Product Product2 { get; set; }
+        public IDictionary<string, string> CommonAttributes1 { get; set; }
+        public IDictionary<string, string> CommonAttributes2 { get; set; }
+
+        public CompareProductsView(Product product1, Product product2)
+        {
+            InitializeComponent();
+            Product1 = product1;
+            Product2 = product2;
+
+            CommonAttributes1 = new Dictionary<string, string>();
+            CommonAttributes2 = new Dictionary<string, string>();
+
+            var commonKeys = product1.Attributes.Keys.Intersect(product2.Attributes.Keys);
+            if (commonKeys.Contains("Price"))
+            {
+                CommonAttributes1.Add("Price", product1.Attributes["Price"]);
+                CommonAttributes2.Add("Price", product2.Attributes["Price"]);
+            }
+            foreach (var key in commonKeys)
+            {
+                if (!key.Equals("Price"))
+                {
+                    CommonAttributes1.Add(key, product1.Attributes[key]);
+                    CommonAttributes2.Add(key, product2.Attributes[key]);
+                }
+            }
+
+            OnPropertyChanged(nameof(Product1));
+            OnPropertyChanged(nameof(Product2));
+            OnPropertyChanged(nameof(CommonAttributes1));
+            OnPropertyChanged(nameof(CommonAttributes2));
+        }
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+}

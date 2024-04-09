@@ -1,6 +1,4 @@
 ﻿using Microsoft.Data.SqlClient;
-using Microsoft.Identity.Client;
-using Microsoft.IdentityModel.Tokens;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
 using System.Data;
@@ -16,9 +14,9 @@ namespace NamespaceGPT.Data.Repositories
 
         public ProductRepository()
         {
-            _connectionString = "Server=LAPTOP-EHFIU8C5\\SQLEXPRESS;Database=ISS;Trusted_Connection=True;TrustServerCertificate=True";
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
-
 
         public int AddProduct(Product product)
         {
