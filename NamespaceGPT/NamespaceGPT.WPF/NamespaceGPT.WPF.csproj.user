@@ -5,16 +5,10 @@
     <Compile Update="FavouriteProductsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Login.xaml.cs">
+    <Compile Update="ProductReviewsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Register.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="ReviewsView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UsersView.xaml.cs">
+    <Compile Update="WindowTemplate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -22,28 +16,7 @@
     <Page Update="FavouriteProductsView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ProductsView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ListingsView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MarketplacesView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Register.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ReviewsView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="UsersView.xaml">
+    <Page Update="ProductReviewsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
