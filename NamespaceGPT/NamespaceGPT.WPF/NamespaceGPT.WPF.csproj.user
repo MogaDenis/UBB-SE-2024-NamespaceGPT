@@ -21,6 +21,12 @@
     <Compile Update="Admin\UsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainHomeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WindowTemplate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -52,6 +58,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\UsersView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainHomeWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowTemplate.xaml">

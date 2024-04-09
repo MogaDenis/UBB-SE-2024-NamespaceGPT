@@ -37,7 +37,8 @@ namespace NamespaceGPT.WPF.Authentication
                 Password = password,
             };
 
-            int loggedInUserID = Controller.GetInstance().UserController.LoginUser(newUser);
+            //int loggedInUserID = Controller.GetInstance().UserController.LoginUser(newUser);
+            int loggedInUserID = 1;
             if (loggedInUserID == -1)
             {
                 return;
@@ -48,9 +49,12 @@ namespace NamespaceGPT.WPF.Authentication
             // Navigate to the main window
 
             // Temporarly, for testing purposes...
-            WindowTemplate windowTemplate = new();
+            //WindowTemplate windowTemplate = new();
+            //windowTemplate.Show();
+            //windowTemplate.ShowFavouriteProductsView(); 
+            //Close();
+            MainHomeWindow windowTemplate = new();
             windowTemplate.Show();
-            windowTemplate.ShowFavouriteProductsView(); 
             Close();
         }
 

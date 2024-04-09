@@ -16,12 +16,12 @@ namespace NamespaceGPT.WPF
         public FavouriteProductsView(int userId)
         {
             _userId = userId;
-            _productController = Controller.GetInstance().ProductController; 
-            _favouriteProductController = Controller.GetInstance().FavouriteProductController;
+            //_productController = Controller.GetInstance().ProductController; 
+            //_favouriteProductController = Controller.GetInstance().FavouriteProductController;
 
-            InitializeFavouriteProductsList();
+            //InitializeFavouriteProductsList();
 
-            InitializeComponent();
+            //InitializeComponent();
 
             DataContext = this;
         }
