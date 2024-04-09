@@ -1,23 +1,22 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using NamespaceGPT.Common.ConfigurationManager.Module.JsonManager;
+using NamespaceGPT.Common.ConfigurationManager.Module.JsonManager.JsonParser;
 
 namespace NamespaceGPT.Data
 {
     internal class ConfigurationService
     {
-        private readonly IConfiguration _configuration;
+        private readonly JsonObject? _jsonObject;
 
         public ConfigurationService()
         {
-            var builder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
-
-            _configuration = builder.Build();
+            _jsonObject = (JsonObject?)JsonFileReader.ParseJsonFile("appsettings.json");
         }
 
         public string GetConnectionString()
         {
-            var connectionString = _configuration.GetConnectionString("defaultConnection");
+            var connectionString = (string?)((JsonObject?)_jsonObject?.Properties["ConnectionStrings"])?.Properties["defaultConnection"];
 
-            if (connectionString == null) 
+            if (connectionString == null)
             {
                 return string.Empty;
             }
