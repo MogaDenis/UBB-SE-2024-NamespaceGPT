@@ -17,9 +17,9 @@
 
                 <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}"/>
 
-                <DataGridTextColumn Header="Category" Width="*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Category" Width="*" Binding="{Binding Category}"/>
 
-                <DataGridTextColumn Header="Brand" Width="*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Brand" Width="*" Binding="{Binding Brand}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
