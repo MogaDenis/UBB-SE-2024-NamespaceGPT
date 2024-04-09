@@ -9,6 +9,7 @@
     <Grid Background="#0b184b">
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <StackPanel Orientation="Vertical">
+                <Button Content="Go to compare" Width="100" Click="Button_Click"/>
                 <TextBlock Foreground="White" FontSize="18" Text="Your favourite products:" Margin="10"/>
                 <ListBox Background="Transparent" BorderThickness="0" ItemsSource="{Binding FavouriteProducts}">
                     
