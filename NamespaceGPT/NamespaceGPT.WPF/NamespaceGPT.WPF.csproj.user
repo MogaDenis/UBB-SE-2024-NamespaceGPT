@@ -5,6 +5,10 @@
     <Compile Update="Admin\AdminDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CompareProductsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+
     <Compile Update="FavouriteProductsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +26,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="CompareProductsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+
     <Page Update="Admin\AdminDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
