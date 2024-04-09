@@ -22,6 +22,7 @@ namespace NamespaceGPT.WPF
             _marketplaceController = Controller.GetInstance().MarketplaceController;
             Product = _productController.GetProduct(productId);
 
+            DataContext = this;
             InitializeComponent();
             InitializeProductDetails();
         }
@@ -57,8 +58,9 @@ namespace NamespaceGPT.WPF
             .ToList();
 
             foreach (Marketplace marketplace in marketplaceNames)
+            {
                 Marketplaces.Add(marketplace);
-
+            }
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
