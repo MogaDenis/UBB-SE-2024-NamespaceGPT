@@ -50,7 +50,10 @@ namespace NamespaceGPT.WPF.Authentication
             // Temporarly, for testing purposes...
             WindowTemplate windowTemplate = new();
             windowTemplate.Show();
-            windowTemplate.ShowFavouriteProductsView(); 
+            windowTemplate.ShowFavouriteProductsView();
+
+            Session.GetInstance().Frame = windowTemplate.MainFrame;
+
             Close();
         }
 

@@ -18,6 +18,8 @@ namespace NamespaceGPT.WPF.Admin
             _productController = Controller.GetInstance().ProductController; 
 
             InitializeComponent();
+
+            ProductsDataGrid.ItemsSource = _productController.GetAllProducts();
         }
     }
 }
