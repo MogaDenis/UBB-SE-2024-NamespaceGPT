@@ -16,7 +16,7 @@ namespace NamespaceGPT.Data.Repositories
 
         public ProductRepository()
         {
-            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+            _connectionString = "Server=LAPTOP-EHFIU8C5\\SQLEXPRESS;Database=ISS;Trusted_Connection=True;TrustServerCertificate=True";
         }
 
 

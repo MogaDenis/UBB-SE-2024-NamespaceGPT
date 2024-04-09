@@ -1,13 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NamespaceGPT.Data.Repositories
 {
@@ -17,7 +11,7 @@ namespace NamespaceGPT.Data.Repositories
 
         public MarketplaceRepository()
         {
-            _connectionString = "Server=DESKTOP-GUC84CO;Database=NamespaceGPT;Trusted_Connection=True;TrustServerCertificate=True";
+            _connectionString = "Server=LAPTOP-EHFIU8C5\\SQLEXPRESS;Database=ISS;Trusted_Connection=True;TrustServerCertificate=True";
         }
 
         public int AddMarketplace(Marketplace marketplace)
