@@ -44,6 +44,7 @@ namespace NamespaceGPT.WPF
             }
             return categories.ToList();
         }
+
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 

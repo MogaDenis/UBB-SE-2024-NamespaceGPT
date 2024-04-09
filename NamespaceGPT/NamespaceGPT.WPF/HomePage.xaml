@@ -32,7 +32,9 @@
                     </ItemsControl.ItemsPanel>
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <Button Background="#363457">
+                            <Button Background="#363457"
+                    Command="{Binding DataContext.ButtonCommand, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
+                    CommandParameter="{Binding Id}">
                                 <Border BorderBrush="LightGray" BorderThickness="0,0,0,0" Padding="5" Margin="5">
                                     <StackPanel>
                                         <TextBlock Text="{Binding Name}" Foreground="White"/>
