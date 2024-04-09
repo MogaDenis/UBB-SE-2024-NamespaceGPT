@@ -9,7 +9,6 @@ namespace NamespaceGPT.WPF.ProductPage
     public partial class ProductPage : UserControl
     {
         private readonly int _userId;
-        private readonly int _productId;
         Product product;
         private readonly ListingController _listingController;
         private readonly ProductController _productController;
@@ -18,7 +17,6 @@ namespace NamespaceGPT.WPF.ProductPage
         public ProductPage(int productId)
         {
             _userId = userId;
-            _productId = productId;
             _listingController = Controller.GetInstance().ListingController;
             _productController = Controller.GetInstance().ProductController;
             _marketplaceController = Controller.GetInstance().MarketplaceController;
@@ -39,7 +37,7 @@ namespace NamespaceGPT.WPF.ProductPage
             IEnumerable<Listing> lisitngs = _listingController.GetAllListings();
             foreach(Listing listing in lisitngs)
             {
-                if(listing.ProductId == _productId)
+                if(listing.ProductId == product.Id)
                 {
                     if(listing.Price < min_price)
                         min_price = listing.Price; break;
