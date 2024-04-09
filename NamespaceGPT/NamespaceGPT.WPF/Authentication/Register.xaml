@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NamespaceGPT.WPF"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
+        Title="Login" Height="450" Width="1000">
     <Grid Background="#0b184b">
         <StackPanel Width="200" VerticalAlignment="Center">
             <Label Foreground="#f2f5fa" FontSize="17">Here you can Sign Up</Label>
