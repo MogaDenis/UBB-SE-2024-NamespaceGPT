@@ -33,5 +33,11 @@ namespace NamespaceGPT.WPF.Admin
             MarketplacesView marketplacesView = new();
             MainFrame.NavigationService.Navigate(marketplacesView);
         }
+
+        private void ShowReviews_Click(object sender, RoutedEventArgs e)
+        {
+            ReviewsView reviewsView = new();
+            MainFrame.NavigationService.Navigate(reviewsView);
+        }
     }
 }

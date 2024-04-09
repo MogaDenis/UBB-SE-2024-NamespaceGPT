@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:NamespaceGPT.WPF"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Grid Background="#0b184b">
         <Border Background="LightGray" Padding="10">
             <TextBlock Text="Users" FontSize="20" FontWeight="Bold"/>
         </Border>
