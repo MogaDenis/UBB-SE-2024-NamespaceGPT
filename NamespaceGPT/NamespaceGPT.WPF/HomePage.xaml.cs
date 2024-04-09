@@ -31,7 +31,8 @@ namespace NamespaceGPT.WPF
 
         private static void ButtonClicked(int itemId)
         {
-            
+            ProductPage productPage = new(itemId);
+            Session.GetInstance().Frame.NavigationService.Navigate(productPage);
         }
     }
 }

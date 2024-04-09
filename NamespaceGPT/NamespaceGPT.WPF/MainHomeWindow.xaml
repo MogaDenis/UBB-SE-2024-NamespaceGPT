@@ -38,7 +38,7 @@
                     </Border>
 
                     <!-- Main Content Area -->
-                    <Frame Grid.Row="1" x:Name="MainFrame" NavigationUIVisibility="Hidden">
+                    <Frame Grid.Row="1" x:Name="MainFrame" >
                         <!-- Initially empty -->
                     </Frame>
                 </StackPanel>

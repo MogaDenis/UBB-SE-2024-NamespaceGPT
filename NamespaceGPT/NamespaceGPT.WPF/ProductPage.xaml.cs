@@ -30,13 +30,13 @@ namespace NamespaceGPT.WPF
         private void InitializeProductDetails()
         {
             this.ProductName.Text = Product.Name;
-            this.ProductDescription.Text = Product.Description;
+            //this.ProductDescription.Text = Product.Description;
 
 
             //Get price
             int min_price = 100000000;
-            IEnumerable<Listing> lisitngs = _listingController.GetAllListings();
-            foreach(Listing listing in lisitngs)
+            IEnumerable<Listing> listings = _listingController.GetAllListings();
+            foreach(Listing listing in listings)
             {
                 if(listing.ProductId == Product.Id)
                 {
@@ -44,18 +44,18 @@ namespace NamespaceGPT.WPF
                         min_price = listing.Price; break;
                 }
             }
-            this.ProductPrice.Text = min_price.ToString();
+            this.ProductMinPrice.Text = min_price.ToString();
 
             //available on list
             //select name from marketplace inner join listing on marketplace.id = listing.marketplace
             //inner join product on listing.product = product.id
-            List<Marketplace> marketplaceNames = 
+            HashSet<Marketplace> marketplaceNames = 
                 (
             from marketplace in _marketplaceController.GetAllMarketplaces()
             join listing in _listingController.GetAllListings() on marketplace.Id equals listing.MarketplaceId
             join product in _productController.GetAllProducts() on listing.ProductId equals product.Id
             select marketplace)
-            .ToList();
+            .ToHashSet();
 
             foreach (Marketplace marketplace in marketplaceNames)
             {
@@ -66,6 +66,12 @@ namespace NamespaceGPT.WPF
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
 
+        }
+
+        private void ReviewButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            ProductReviewsPage productReviewsPage = new(Product.Id);
+            Session.GetInstance().Frame.NavigationService.Navigate(productReviewsPage);
         }
     }
 }

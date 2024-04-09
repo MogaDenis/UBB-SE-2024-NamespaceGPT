@@ -20,7 +20,8 @@
     <Compile Update="Admin\UsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ProductPage.xaml.cs">
+	  <Compile Update="ProductPage.xaml.cs">
+	  </Compile>
     <Compile Update="HomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -59,7 +60,8 @@
     <Page Update="Admin\UsersView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ProductPage.xaml">
+	  <Page Update="ProductPage.xaml">
+	  </Page>
     <Page Update="HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
