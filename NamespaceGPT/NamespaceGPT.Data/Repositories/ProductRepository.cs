@@ -1,6 +1,4 @@
 ﻿using Microsoft.Data.SqlClient;
-using Microsoft.Identity.Client;
-using Microsoft.IdentityModel.Tokens;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
 using System.Data;
@@ -16,9 +14,9 @@ namespace NamespaceGPT.Data.Repositories
 
         public ProductRepository()
         {
-            _connectionString = "Data Source=MATEI-PC\\SQLEXPRESS;Initial Catalog=NAMESPACEGPT;Integrated Security=True;Encrypt=false;TrustServerCertificate=true;";
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
-
 
         public int AddProduct(Product product)
         {

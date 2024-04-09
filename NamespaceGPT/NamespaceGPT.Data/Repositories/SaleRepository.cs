@@ -11,7 +11,8 @@ namespace NamespaceGPT.Data.Repositories
 
         public SaleRepository()
         {
-            _connectionString = "Data Source=MATEI-PC\\SQLEXPRESS;Initial Catalog=ISS_Alert;Integrated Security=True;Encrypt=false;TrustServerCertificate=true;";
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
 
         public int AddSale(Sale sale)

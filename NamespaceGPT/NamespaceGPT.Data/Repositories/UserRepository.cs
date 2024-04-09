@@ -11,7 +11,9 @@ namespace NamespaceGPT.Data.Repositories
 
         public UserRepository()
         {
-            _connectionString = "Data Source=MATEI-PC\\SQLEXPRESS;Initial Catalog=NAMESPACEGPT;Integrated Security=True;Encrypt=false;TrustServerCertificate=true;";
+
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
 
         public int AddUser(User user)

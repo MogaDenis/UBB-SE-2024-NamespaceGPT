@@ -1,12 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NamespaceGPT.Data.Repositories
 {
@@ -16,7 +11,8 @@ namespace NamespaceGPT.Data.Repositories
 
         public ListingRepository()
         {
-            _connectionString = "Data Source=MATEI-PC\\SQLEXPRESS;Initial Catalog=ISS_Alert;Integrated Security=True;Encrypt=false;TrustServerCertificate=true;";
+            ConfigurationService configurationService = new();
+            _connectionString = configurationService.GetConnectionString();
         }
 
         public int AddListing(Listing listing)

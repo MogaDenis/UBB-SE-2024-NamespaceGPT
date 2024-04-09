@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using NamespaceGPT.Data;
 using NamespaceGPT.Data.Models;
 using System.Data;
 
@@ -8,7 +9,8 @@ public class ReviewRepository : IReviewRepository
 
     public ReviewRepository()
     {
-        _connectionString = "Data Source=MATEI-PC\\SQLEXPRESS;Initial Catalog=ISS_Alert;Integrated Security=True;Encrypt=false;TrustServerCertificate=true;";
+        ConfigurationService configurationService = new();
+        _connectionString = configurationService.GetConnectionString();
     }
 
     public int AddReview(Review review)

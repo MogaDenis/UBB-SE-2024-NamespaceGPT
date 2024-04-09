@@ -60,11 +60,11 @@ namespace NamespaceGPT.WPF
             };
 
 
-            //FavouriteProductsView favouriteProductsView = new(Session.GetInstance().UserId);
-            //MainFrame.NavigationService.Navigate(favouriteProductsView);
+            FavouriteProductsView favouriteProductsView = new(Session.GetInstance().UserId);
+            MainFrame.NavigationService.Navigate(favouriteProductsView);
 
-            CompareProductsView compareView = new CompareProductsView(p1, p2);
-            MainFrame.NavigationService.Navigate(compareView);
+            //CompareProductsView compareView = new CompareProductsView(p1, p2);
+            //MainFrame.NavigationService.Navigate(compareView);
         }
     }
 }
