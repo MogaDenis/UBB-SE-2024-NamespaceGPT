@@ -1,6 +1,4 @@
-﻿using NamespaceGPT.Api.Controllers;
-
-namespace NamespaceGPT.WPF
+﻿namespace NamespaceGPT.WPF
 {
     public class Session
     {
