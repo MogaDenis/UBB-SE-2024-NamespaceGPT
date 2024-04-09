@@ -13,6 +13,6 @@ namespace NamespaceGPT.Data.Models
 
         public int MarketplaceId { get; set; } = 0;
 
-        public double Price { get; set; } = 0;
+        public int Price { get; set; } = 0;
     }
 }

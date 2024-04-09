@@ -68,7 +68,7 @@ namespace NamespaceGPT.Data.Repositories
                     Id = reader.GetInt32(0),
                     ProductId = reader.GetInt32(1),
                     MarketplaceId = reader.GetInt32(2),
-                    Price = reader.GetDouble(3),
+                    Price = reader.GetInt32(3),
                 };
 
                 listings.Add(listing);
@@ -97,7 +97,7 @@ namespace NamespaceGPT.Data.Repositories
                     Id = reader.GetInt32(0),
                     ProductId = reader.GetInt32(1),
                     MarketplaceId = reader.GetInt32(2),
-                    Price = reader.GetFloat(3)
+                    Price = reader.GetInt32(3)
                 };
 
                 return listing;

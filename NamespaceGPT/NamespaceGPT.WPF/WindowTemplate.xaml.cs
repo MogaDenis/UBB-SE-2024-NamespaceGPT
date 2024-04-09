@@ -10,6 +10,8 @@ namespace NamespaceGPT.WPF
             InitializeComponent();
         }
 
+
+
         public void ShowFavouriteProductsView()
         {
 
@@ -19,6 +21,10 @@ namespace NamespaceGPT.WPF
 
             //CompareProductsView compareView = new CompareProductsView(p1, p2);
             //MainFrame.NavigationService.Navigate(compareView);
+
+
+            ProductPage productPage = new ProductPage(1);
+            MainFrame.NavigationService.Navigate(productPage);
 
             ProductReviewsPage productReviews = new ProductReviewsPage(1);
             MainFrame.NavigationService.Navigate(productReviews);

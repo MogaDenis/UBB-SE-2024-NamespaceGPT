@@ -8,7 +8,6 @@
     <Compile Update="CompareProductsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-
     <Compile Update="FavouriteProductsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -21,6 +20,7 @@
     <Compile Update="Admin\UsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ProductPage.xaml.cs">
     <Compile Update="HomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -35,7 +35,6 @@
     <Page Update="CompareProductsView.xaml">
       <SubType>Designer</SubType>
     </Page>
-
     <Page Update="Admin\AdminDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -60,6 +59,7 @@
     <Page Update="Admin\UsersView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ProductPage.xaml">
     <Page Update="HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
