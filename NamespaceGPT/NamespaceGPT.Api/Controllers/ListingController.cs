@@ -33,6 +33,11 @@ namespace NamespaceGPT.Api.Controllers
             return _listingService.GetAllListings();
         }
 
+        public IEnumerable<Listing> GetAllListingsOfProduct(int productId)
+        {
+            return _listingService.GetAllListingsOfProduct(productId);
+        }
+
         public Listing? Getlisting(int id)
         {
             return _listingService.GetListing(id);

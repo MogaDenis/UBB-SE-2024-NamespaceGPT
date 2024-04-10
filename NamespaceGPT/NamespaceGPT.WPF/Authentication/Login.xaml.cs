@@ -20,6 +20,7 @@ namespace NamespaceGPT.WPF.Authentication
 
             if (username.IsNullOrEmpty() || password.IsNullOrEmpty())
             {
+                MessageBox.Show("Provide some data in order to connect :)");
                 return;
             }
 
@@ -40,6 +41,7 @@ namespace NamespaceGPT.WPF.Authentication
             int loggedInUserID = Controller.GetInstance().UserController.LoginUser(newUser);
             if (loggedInUserID == -1)
             {
+                MessageBox.Show("Wrong username or password!");
                 return;
             }
 

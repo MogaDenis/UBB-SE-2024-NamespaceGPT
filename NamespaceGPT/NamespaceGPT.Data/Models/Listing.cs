@@ -14,5 +14,21 @@ namespace NamespaceGPT.Data.Models
         public int MarketplaceId { get; set; } = 0;
 
         public int Price { get; set; } = 0;
+
+        public Product Product
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Marketplace Marketplace
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

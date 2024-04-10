@@ -12,6 +12,14 @@ namespace NamespaceGPT.Data.Models
         public int ProductId { get; set; }
         public int UserId { get; set; }
 
+        public IAlert IAlert
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public void Notify()
         {
             throw new NotImplementedException();

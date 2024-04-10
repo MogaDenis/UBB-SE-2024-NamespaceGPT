@@ -1,9 +1,4 @@
 ﻿using NamespaceGPT.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NamespaceGPT.Data.Repositories.Interfaces
 {
@@ -13,6 +8,7 @@ namespace NamespaceGPT.Data.Repositories.Interfaces
         bool DeleteListing(int id);
         bool UpdateListing(int id, Listing listing);
         IEnumerable<Listing> GetAllListings();
+        IEnumerable<Listing> GetAllListingsOfProduct(int productId);
         Listing? GetListing(int id);
     }
 }

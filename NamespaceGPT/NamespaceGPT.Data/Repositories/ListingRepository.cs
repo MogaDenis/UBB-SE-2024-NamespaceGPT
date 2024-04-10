@@ -77,6 +77,36 @@ namespace NamespaceGPT.Data.Repositories
             return listings;
         }
 
+        public IEnumerable<Listing> GetAllListingsOfProduct(int productId)
+        {
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM Listing WHERE product = @productId";
+
+            command.Parameters.AddWithValue("@productId", productId);
+
+            SqlDataReader reader = command.ExecuteReader();
+            List<Listing> listings = [];
+
+            while (reader.Read())
+            {
+                Listing listing = new()
+                {
+                    Id = reader.GetInt32(0),
+                    ProductId = reader.GetInt32(1),
+                    MarketplaceId = reader.GetInt32(2),
+                    Price = reader.GetInt32(3),
+                };
+
+                listings.Add(listing);
+            }
+
+            return listings;
+        }
+
         public Listing? GetListing(int id)
         {
             using SqlConnection connection = new(_connectionString);

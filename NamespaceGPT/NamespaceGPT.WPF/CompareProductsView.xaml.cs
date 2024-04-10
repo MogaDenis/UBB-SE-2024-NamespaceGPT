@@ -1,13 +1,6 @@
 ﻿using NamespaceGPT.Data.Models;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-
 
 namespace NamespaceGPT.WPF
 {
@@ -17,6 +10,8 @@ namespace NamespaceGPT.WPF
         public Product Product2 { get; set; }
         public IDictionary<string, string> CommonAttributes1 { get; set; }
         public IDictionary<string, string> CommonAttributes2 { get; set; }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         public CompareProductsView(Product product1, Product product2)
         {
@@ -48,8 +43,6 @@ namespace NamespaceGPT.WPF
             OnPropertyChanged(nameof(CommonAttributes2));
         }
 
-
-        public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
