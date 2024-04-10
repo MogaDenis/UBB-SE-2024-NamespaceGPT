@@ -20,11 +20,12 @@
                     <ItemsControl ItemsSource="{Binding Categories}" Height="143" Width="122">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Button Content="{Binding}" Background="#FF735290" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="White" BorderThickness="0,0,0,0"/>
+                                <Button Command="{Binding DataContext.DisplayProductsByCategory, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
+CommandParameter="{Binding}" Content="{Binding}" Background="#FF735290" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="White" BorderThickness="0,0,0,0"/>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
-                    <Button Content="View All categories : " Margin="10" Height="20" Foreground="White" Width="auto" Background="#FF735290" BorderThickness="0,0,0,0"/>
+                    <Button Click="CategoriesDisplay"  Content="View All categories : " Margin="10" Height="20" Foreground="White" Width="auto" Background="#FF735290" BorderThickness="0,0,0,0"/>
                 </StackPanel>
             </Border>
             <!-- Main Content -->
@@ -33,12 +34,15 @@
                 <StackPanel>
 
                     <!-- Header content -->
-                    <Border Background="#6966A3" Grid.Row="0" Margin="0,0,0,0" Height="52">
-                        <TextBox Foreground="#FF6F6E6E" TextChanged="TextBox_TextChanged" Width="238" Height="24" VerticalAlignment="Center"/>
+                    <Border Background="#6966A3" Grid.Row="0" Margin="0,0,0,0" Height="80">
+                        <StackPanel>
+                            <TextBox x:Name="SearchTextBox" Foreground="#FF6F6E6E" Margin="0,10,0,0" Width="238" Height="24" VerticalAlignment="Center" TextChanged="SearchTextBox_TextChanged"/>
+                            <ListBox x:Name="SearchListbox" Margin="0,0,0,0" Width="238" Height="200" Panel.ZIndex="10" SelectionMode="Extended"/>
+                        </StackPanel>
                     </Border>
 
                     <!-- Main Content Area -->
-                    <Frame Grid.Row="1" x:Name="MainFrame" >
+                    <Frame Grid.Row="1" x:Name="MainFrame" Panel.ZIndex="0">
                         <!-- Initially empty -->
                     </Frame>
                 </StackPanel>
