@@ -28,7 +28,7 @@ namespace NamespaceGPT.Api.Controllers
             return _alertService.DeleteAlert(id, alert);
         }
 
-        public IAlert? getAlert(int alertId)
+        public IAlert? GetAlert(int alertId)
         {
             throw new NotImplementedException();
         }

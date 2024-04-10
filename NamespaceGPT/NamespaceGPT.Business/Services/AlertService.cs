@@ -30,7 +30,7 @@ namespace NamespaceGPT.Business.Services
             return _alertRepository.DeleteAlert(id, alert);
         }
 
-        public IAlert? getAlert(int alertId)
+        public IAlert? GetAlert(int alertId)
         {
             throw new NotImplementedException();
         }

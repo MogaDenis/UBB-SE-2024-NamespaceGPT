@@ -8,7 +8,7 @@ namespace NamespaceGPT.Data.Repositories.Interfaces
         bool DeleteAlert(int id, IAlert alert);
         bool UpdateAlert(int id, IAlert alert);
         IEnumerable<IAlert> GetAllAlerts();
-        IAlert? getAlert(int alertId);
+        IAlert? GetAlert(int alertId);
         IEnumerable<IAlert> GetAllUserAlerts(int userId);
         IEnumerable<IAlert> GetAllProductAlerts(int productId);
     }

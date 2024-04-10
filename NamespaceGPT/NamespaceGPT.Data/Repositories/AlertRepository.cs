@@ -97,7 +97,7 @@ namespace NamespaceGPT.Data.Repositories
             return rowsAffected > 0;
         }
 
-        public IAlert? getAlert(int alertId)
+        public IAlert? GetAlert(int alertId)
         {
             throw new NotImplementedException();
         }
