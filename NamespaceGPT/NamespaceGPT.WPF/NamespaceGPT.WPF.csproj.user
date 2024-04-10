@@ -5,6 +5,9 @@
     <Compile Update="Admin\AdminDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CategoriesDisplayFrame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CompareProductsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -20,12 +23,15 @@
     <Compile Update="Admin\UsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-	  <Compile Update="ProductPage.xaml.cs">
-	  </Compile>
+    <Compile Update="ProductPage.xaml.cs">
+    </Compile>
     <Compile Update="HomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MainHomeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProductsByCategoryPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WindowTemplate.xaml.cs">
@@ -33,6 +39,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="CategoriesDisplayFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="CompareProductsView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -60,12 +69,15 @@
     <Page Update="Admin\UsersView.xaml">
       <SubType>Designer</SubType>
     </Page>
-	  <Page Update="ProductPage.xaml">
-	  </Page>
+    <Page Update="ProductPage.xaml">
+    </Page>
     <Page Update="HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainHomeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProductsByCategoryPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowTemplate.xaml">
