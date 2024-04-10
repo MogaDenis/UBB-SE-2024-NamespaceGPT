@@ -1,6 +1,11 @@
 ﻿using NamespaceGPT.Api.Controllers;
 using NamespaceGPT.Data.Models;
 using GalaSoft.MvvmLight.Command;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -18,6 +23,7 @@ namespace NamespaceGPT.WPF
             SearchListbox.Visibility = Visibility.Collapsed;
             _productController = Controller.GetInstance().ProductController;
             Categories = GetCategories().Take(3).ToList();
+
             DataContext = this;
 
             HomePage homepage = new();
