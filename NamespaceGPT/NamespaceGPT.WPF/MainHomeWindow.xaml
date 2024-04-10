@@ -42,7 +42,7 @@ CommandParameter="{Binding}" Content="{Binding}" Background="#FF735290" Margin="
                     </Border>
 
                     <!-- Main Content Area -->
-                    <Frame Grid.Row="1" x:Name="MainFrame" Panel.ZIndex="0">
+                    <Frame Grid.Row="1" x:Name="MainFrame">
                         <!-- Initially empty -->
                     </Frame>
                 </StackPanel>

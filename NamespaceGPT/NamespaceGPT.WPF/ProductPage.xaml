@@ -31,7 +31,9 @@
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
+                    
                 </StackPanel>
+                <Button x:Name="FavouriteButton" Content="Mark as favourite" FontWeight="Bold" FontSize="14" Height="30" Margin="100,0,0,0" Click="FavouriteButton_Click"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Vertical">

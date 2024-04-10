@@ -63,7 +63,6 @@ namespace NamespaceGPT.Data.Repositories
             return newAlertId;
         }
 
-
         public bool DeleteAlert(int id, IAlert alert)
         {
             using SqlConnection connection = new(_connectionString);
@@ -71,8 +70,8 @@ namespace NamespaceGPT.Data.Repositories
 
             SqlCommand command = connection.CreateCommand();
             command.CommandType = CommandType.Text;
-            
-            switch(alert)
+
+            switch (alert)
             {
                 case BackInStockAlert backInStockAlert:
                     command.CommandText = "DELETE FROM BackInStockAlerts WHERE BackInStockAlerts.id = @id";

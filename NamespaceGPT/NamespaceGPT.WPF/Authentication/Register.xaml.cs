@@ -12,7 +12,7 @@ namespace NamespaceGPT.WPF.Authentication
             InitializeComponent();
         }
 
-        private void OpenLogin()
+        private static void OpenLogin()
         {
             Login login = new();
             login.Show();
@@ -25,6 +25,7 @@ namespace NamespaceGPT.WPF.Authentication
 
             if (username.IsNullOrEmpty() || password.IsNullOrEmpty())
             {
+                MessageBox.Show("You must provide both the username and the password!");
                 return;
             }
 

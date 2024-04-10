@@ -33,6 +33,11 @@ namespace NamespaceGPT.Business.Services
             return _listingRepository.GetAllListings();
         }
 
+        public IEnumerable<Listing> GetAllListingsOfProduct(int productId)
+        {
+            return _listingRepository.GetAllListingsOfProduct(productId);
+        }
+
         public Listing? GetListing(int id)
         {
             return _listingRepository.GetListing(id);

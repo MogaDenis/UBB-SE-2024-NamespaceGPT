@@ -30,7 +30,7 @@ namespace NamespaceGPT.WPF
         private void InitializeReviewsList()
         {
             var reviews = _reviewController.GetReviewsForProduct(_productId);
-            var users=_userController.GetAllUsers();
+            var users = _userController.GetAllUsers();
             var updatedReviews = from review in reviews
                                  where review.ProductId == _productId
                                  join user in users

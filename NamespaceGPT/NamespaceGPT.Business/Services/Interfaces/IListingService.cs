@@ -13,6 +13,7 @@ namespace NamespaceGPT.Business.Services.Interfaces
         bool DeleteListing(int id);
         bool UpdateListing(int id, Listing listing);
         IEnumerable<Listing> GetAllListings();
+        IEnumerable<Listing> GetAllListingsOfProduct(int productId);
         Listing? GetListing(int id);
     }
 }
