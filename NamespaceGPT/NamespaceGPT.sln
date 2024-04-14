@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamespaceGPT.Business", "Na
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamespaceGPT.Api", "NamespaceGPT.Api\NamespaceGPT.Api.csproj", "{16389D31-131E-43B8-97E4-21AE97C37FDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamespaceGPT.Common", "NamespaceGPT.Common\NamespaceGPT.Common.csproj", "{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamespaceGPT.Common", "NamespaceGPT.Common\NamespaceGPT.Common.csproj", "{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamespaceGPT.Tests", "NamespaceGPT.UnitTesting\NamespaceGPT.Tests.csproj", "{30B3BD27-6213-4BAF-9A50-480DD2EEF639}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B60EDD18-11C3-4DDC-85EF-0D6F9684F6D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30B3BD27-6213-4BAF-9A50-480DD2EEF639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30B3BD27-6213-4BAF-9A50-480DD2EEF639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30B3BD27-6213-4BAF-9A50-480DD2EEF639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30B3BD27-6213-4BAF-9A50-480DD2EEF639}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

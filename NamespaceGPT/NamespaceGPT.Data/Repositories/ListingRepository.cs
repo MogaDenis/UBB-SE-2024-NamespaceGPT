@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using NamespaceGPT.Common.ConfigurationManager;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
 using System.Data;
@@ -9,10 +10,9 @@ namespace NamespaceGPT.Data.Repositories
     {
         private readonly string _connectionString;
 
-        public ListingRepository()
+        public ListingRepository(IConfigurationManager configurationManager)
         {
-            ConfigurationService configurationService = new();
-            _connectionString = configurationService.GetConnectionString();
+            _connectionString = configurationManager.GetConnectionString("appsettings.json");
         }
 
         public int AddListing(Listing listing)

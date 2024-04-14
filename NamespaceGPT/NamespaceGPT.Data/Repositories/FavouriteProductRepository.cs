@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
+using NamespaceGPT.Common.ConfigurationManager;
 using System.Data;
 
 namespace NamespaceGPT.Data.Repositories
@@ -8,11 +9,12 @@ namespace NamespaceGPT.Data.Repositories
     public class FavouriteProductRepository : IFavouriteProductRepository
     {
         private readonly string _connectionString;
+        private readonly IConfigurationManager _configurationManager;
        
-        public FavouriteProductRepository()
+        public FavouriteProductRepository(IConfigurationManager configurationManager)
         {
-            ConfigurationService configurationService = new();
-            _connectionString = configurationService.GetConnectionString();
+            _configurationManager = configurationManager ?? throw new ArgumentNullException(nameof(configurationManager));
+            _connectionString = _configurationManager.GetConnectionString("appsettings.json");
         }
 
         public int AddFavouriteProduct(FavouriteProduct favouriteProduct)

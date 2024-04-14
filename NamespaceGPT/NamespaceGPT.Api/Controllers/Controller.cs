@@ -1,4 +1,5 @@
 ﻿using NamespaceGPT.Business.Services;
+using NamespaceGPT.Common.ConfigurationManager;
 using NamespaceGPT.Data.Repositories;
 
 namespace NamespaceGPT.Api.Controllers
@@ -16,12 +17,14 @@ namespace NamespaceGPT.Api.Controllers
 
         private Controller()
         {
-            UserController = new UserController(new UserService(new UserRepository()));
-            MarketplaceController = new MarketplaceController(new MarketplaceService(new MarketplaceRepository()));
-            ListingController = new ListingController(new ListingService(new ListingRepository()));
-            FavouriteProductController = new FavouriteProductController(new FavouriteProductService(new FavouriteProductRepository()));
-            ReviewController = new ReviewController(new ReviewService(new ReviewRepository()));
-            ProductController = new ProductController(new ProductService(new ProductRepository()));
+            IConfigurationManager configurationManager = new ConfigurationManager();
+
+            UserController = new UserController(new UserService(new UserRepository(configurationManager)));
+            MarketplaceController = new MarketplaceController(new MarketplaceService(new MarketplaceRepository(configurationManager)));
+            ListingController = new ListingController(new ListingService(new ListingRepository(configurationManager)));
+            FavouriteProductController = new FavouriteProductController(new FavouriteProductService(new FavouriteProductRepository(configurationManager)));
+            ReviewController = new ReviewController(new ReviewService(new ReviewRepository(configurationManager)));
+            ProductController = new ProductController(new ProductService(new ProductRepository(configurationManager)));
         }
 
         public static Controller GetInstance()

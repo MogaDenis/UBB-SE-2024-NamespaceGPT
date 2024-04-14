@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
+using NamespaceGPT.Common.ConfigurationManager;
 using System.Data;
 
 namespace NamespaceGPT.Data.Repositories
@@ -9,10 +10,9 @@ namespace NamespaceGPT.Data.Repositories
     {
         private readonly string _connectionString;
 
-        public AlertRepository()
+        public AlertRepository(IConfigurationManager configurationManager)
         {
-            ConfigurationService configurationService = new();
-            _connectionString = configurationService.GetConnectionString();
+            _connectionString = configurationManager.GetConnectionString("appsettings.json");
         }
 
         public int AddAlert(IAlert alert)
@@ -107,56 +107,59 @@ namespace NamespaceGPT.Data.Repositories
             using SqlConnection connection = new(_connectionString);
             connection.Open();
 
-            SqlCommand command1 = connection.CreateCommand();
-            command1.CommandType = CommandType.Text;
-            command1.CommandText = "SELECT * FROM BackInStockAlerts";
+            // Get BackInStockAlerts
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM BackInStockAlerts";
 
-            SqlDataReader reader1 = command1.ExecuteReader();
+            SqlDataReader reader = command.ExecuteReader();
             List<IAlert> alerts = [];
 
-            while (reader1.Read())
+            while (reader.Read())
             {
                 BackInStockAlert alert = new()
                 {
-                    Id = reader1.GetInt32(0),
-                    UserId = reader1.GetInt32(1),
-                    ProductId = reader1.GetInt32(2),
-                    MarketplaceId = reader1.GetInt32(3),
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ProductId = reader.GetInt32(2),
+                    MarketplaceId = reader.GetInt32(3),
                 };
 
                 alerts.Add(alert);
             }
 
-            SqlCommand command2 = connection.CreateCommand();
-            command2.CommandText = "SELECT * FROM NewProductAlerts";
-            command2.CommandType = CommandType.Text;
-            SqlDataReader reader2 = command2.ExecuteReader();
+            // Get NewProductAlerts
+            command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM NewProductAlerts";
+            command.CommandType = CommandType.Text;
+            reader = command.ExecuteReader();
 
-            while (reader2.Read())
+            while (reader.Read())
             {
                 NewProductAlert alert = new()
                 {
-                    Id = reader2.GetInt32(0),
-                    UserId = reader2.GetInt32(1),
-                    ProductId = reader2.GetInt32(2),
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ProductId = reader.GetInt32(2),
                 };
 
                 alerts.Add(alert);
             }
 
-            SqlCommand command3 = connection.CreateCommand();
-            command3.CommandText = "SELECT * FROM PriceDropAlerts";
-            SqlDataReader reader3 = command3.ExecuteReader();
+            // Get PriceDropAlerts
+            command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM PriceDropAlerts";
+            reader = command.ExecuteReader();
 
-            while (reader3.Read())
+            while (reader.Read())
             {
                 PriceDropAlert alert = new()
                 {
-                    Id = reader3.GetInt32(0),
-                    UserId = reader3.GetInt32(1),
-                    ProductId = reader3.GetInt32(2),
-                    OldPrice = reader3.GetInt32(3),
-                    NewPrice = reader3.GetInt32(4),
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ProductId = reader.GetInt32(2),
+                    OldPrice = reader.GetInt32(3),
+                    NewPrice = reader.GetInt32(4),
                 };
 
                 alerts.Add(alert);
@@ -170,58 +173,61 @@ namespace NamespaceGPT.Data.Repositories
             using SqlConnection connection = new(_connectionString);
             connection.Open();
 
-            SqlCommand command1 = connection.CreateCommand();
-            command1.CommandType = CommandType.Text;
-            command1.CommandText = "SELECT * FROM BackInStockAlerts WHERE ProductId = @productId";
-            command1.Parameters.AddWithValue("@productId", productId);
+            // Get BackInStockAlerts
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM BackInStockAlerts WHERE ProductId = @productId";
+            command.Parameters.AddWithValue("@productId", productId);
 
-            SqlDataReader reader1 = command1.ExecuteReader();
+            SqlDataReader reader = command.ExecuteReader();
             List<IAlert> alerts = [];
 
-            while (reader1.Read())
+            while (reader.Read())
             {
                 BackInStockAlert alert = new()
                 {
-                    Id = reader1.GetInt32(0),
-                    UserId = reader1.GetInt32(1),
-                    ProductId = reader1.GetInt32(2),
-                    MarketplaceId = reader1.GetInt32(3),
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ProductId = reader.GetInt32(2),
+                    MarketplaceId = reader.GetInt32(3),
                 };
 
                 alerts.Add(alert);
             }
 
-            SqlCommand command2 = connection.CreateCommand();
-            command2.CommandText = "SELECT * FROM NewProductAlerts WHERE ProductId = @productId";
-            SqlDataReader reader2 = command2.ExecuteReader();
-            command2.Parameters.AddWithValue("@productId", productId);
+            // Get NewProductAlerts
+            command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM NewProductAlerts WHERE ProductId = @productId";
+            reader = command.ExecuteReader();
+            command.Parameters.AddWithValue("@productId", productId);
 
-            while (reader2.Read())
+            while (reader.Read())
             {
                 NewProductAlert alert = new()
                 {
-                    Id = reader2.GetInt32(0),
-                    UserId = reader2.GetInt32(1),
-                    ProductId = reader2.GetInt32(2),
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ProductId = reader.GetInt32(2),
                 };
 
                 alerts.Add(alert);
             }
+            
+            // Get PriceDropAlerts
+            command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM PriceDropAlerts WHERE ProductId = @productId";
+            reader = command.ExecuteReader();
+            command.Parameters.AddWithValue("@productId", productId);
 
-            SqlCommand command3 = connection.CreateCommand();
-            command3.CommandText = "SELECT * FROM PriceDropAlerts WHERE ProductId = @productId";
-            SqlDataReader reader3 = command3.ExecuteReader();
-            command3.Parameters.AddWithValue("@productId", productId);
-
-            while (reader3.Read())
+            while (reader.Read())
             {
                 PriceDropAlert alert = new()
                 {
-                    Id = reader3.GetInt32(0),
-                    UserId = reader3.GetInt32(1),
-                    ProductId = reader3.GetInt32(2),
-                    OldPrice = reader3.GetInt32(3),
-                    NewPrice = reader3.GetInt32(4),
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ProductId = reader.GetInt32(2),
+                    OldPrice = reader.GetInt32(3),
+                    NewPrice = reader.GetInt32(4),
                 };
 
                 alerts.Add(alert);
@@ -235,58 +241,61 @@ namespace NamespaceGPT.Data.Repositories
             using SqlConnection connection = new(_connectionString);
             connection.Open();
 
-            SqlCommand command1 = connection.CreateCommand();
-            command1.CommandType = CommandType.Text;
-            command1.CommandText = "SELECT * FROM BackInStockAlerts WHERE UserId = @userId";
-            command1.Parameters.AddWithValue("@UserId", userId);
+            // Get BackInStockAlerts
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "SELECT * FROM BackInStockAlerts WHERE UserId = @userId";
+            command.Parameters.AddWithValue("@UserId", userId);
 
-            SqlDataReader reader1 = command1.ExecuteReader();
+            SqlDataReader reader = command.ExecuteReader();
             List<IAlert> alerts = [];
 
-            while (reader1.Read())
+            while (reader.Read())
             {
                 BackInStockAlert alert = new()
                 {
-                    Id = reader1.GetInt32(0),
-                    UserId = reader1.GetInt32(1),
-                    ProductId = reader1.GetInt32(2),
-                    MarketplaceId = reader1.GetInt32(3),
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ProductId = reader.GetInt32(2),
+                    MarketplaceId = reader.GetInt32(3),
                 };
 
                 alerts.Add(alert);
             }
 
-            SqlCommand command2 = connection.CreateCommand();
-            command2.CommandText = "SELECT * FROM NewProductAlerts WHERE UserId = @userId";
-            SqlDataReader reader2 = command2.ExecuteReader();
-            command2.Parameters.AddWithValue("@UserId", userId);
+            // Get NewProductAlerts
+            command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM NewProductAlerts WHERE UserId = @userId";
+            reader = command.ExecuteReader();
+            command.Parameters.AddWithValue("@UserId", userId);
 
-            while (reader2.Read())
+            while (reader.Read())
             {
                 NewProductAlert alert = new()
                 {
-                    Id = reader2.GetInt32(0),
-                    UserId = reader2.GetInt32(1),
-                    ProductId = reader2.GetInt32(2),
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ProductId = reader.GetInt32(2),
                 };
 
                 alerts.Add(alert);
             }
 
-            SqlCommand command3 = connection.CreateCommand();
-            command3.CommandText = "SELECT * FROM PriceDropAlerts WHERE UserId = @userId";
-            SqlDataReader reader3 = command3.ExecuteReader();
-            command3.Parameters.AddWithValue("@UserId", userId);
+            // Get PriceDropAlerts
+            command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM PriceDropAlerts WHERE UserId = @userId";
+            reader = command.ExecuteReader();
+            command.Parameters.AddWithValue("@UserId", userId);
 
-            while (reader3.Read())
+            while (reader.Read())
             {
                 PriceDropAlert alert = new()
                 {
-                    Id = reader3.GetInt32(0),
-                    UserId = reader3.GetInt32(1),
-                    ProductId = reader3.GetInt32(2),
-                    OldPrice = reader3.GetInt32(3),
-                    NewPrice = reader3.GetInt32(4),
+                    Id = reader.GetInt32(0),
+                    UserId = reader.GetInt32(1),
+                    ProductId = reader.GetInt32(2),
+                    OldPrice = reader.GetInt32(3),
+                    NewPrice = reader.GetInt32(4),
                 };
 
                 alerts.Add(alert);
@@ -297,57 +306,55 @@ namespace NamespaceGPT.Data.Repositories
 
         public bool UpdateAlert(int id, IAlert alert)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using SqlConnection connection = new(_connectionString);
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.Text;
+
+            if (alert is BackInStockAlert backInStockAlert)
             {
-                connection.Open();
-
-                SqlCommand command = connection.CreateCommand();
-                command.CommandType = CommandType.Text;
-
-                if (alert is BackInStockAlert backInStockAlert)
-                {
-                    command.CommandText = "UPDATE BackInStockAlerts " +
-                                          "SET UserId = @UserId, " +
-                                          "ProductId = @ProductId, " +
-                                          "MarketplaceId = @MarketplaceId " +
-                                          "WHERE id = @Id";
-                    command.Parameters.AddWithValue("@UserId", backInStockAlert.UserId);
-                    command.Parameters.AddWithValue("@ProductId", backInStockAlert.ProductId);
-                    command.Parameters.AddWithValue("@MarketplaceId", backInStockAlert.MarketplaceId);
-                    command.Parameters.AddWithValue("@Id", id);
-                }
-                else if (alert is NewProductAlert newProductAlert)
-                {
-                    command.CommandText = "UPDATE NewProductAlerts " +
-                                          "SET UserId = @UserId, " +
-                                          "ProductId = @ProductId " +
-                                          "WHERE id = @Id";
-                    command.Parameters.AddWithValue("@UserId", newProductAlert.UserId);
-                    command.Parameters.AddWithValue("@ProductId", newProductAlert.ProductId);
-                    command.Parameters.AddWithValue("@Id", id);
-                }
-                else if (alert is PriceDropAlert priceDropAlert)
-                {
-                    command.CommandText = "UPDATE PriceDropAlerts " +
-                                          "SET UserId = @UserId, " +
-                                          "ProductId = @ProductId, " +
-                                          "OldPrice = @OldPrice, " +
-                                          "NewPrice = @NewPrice " +
-                                          "WHERE id = @Id";
-                    command.Parameters.AddWithValue("@UserId", priceDropAlert.UserId);
-                    command.Parameters.AddWithValue("@ProductId", priceDropAlert.ProductId);
-                    command.Parameters.AddWithValue("@OldPrice", priceDropAlert.OldPrice);
-                    command.Parameters.AddWithValue("@NewPrice", priceDropAlert.NewPrice);
-                    command.Parameters.AddWithValue("@Id", id);
-                }
-                else
-                {
-                    throw new NotImplementedException("Unsupported alert type.");
-                }
-
-                int rowsAffected = command.ExecuteNonQuery();
-                return rowsAffected > 0;
+                command.CommandText = "UPDATE BackInStockAlerts " +
+                                      "SET UserId = @UserId, " +
+                                      "ProductId = @ProductId, " +
+                                      "MarketplaceId = @MarketplaceId " +
+                                      "WHERE id = @Id";
+                command.Parameters.AddWithValue("@UserId", backInStockAlert.UserId);
+                command.Parameters.AddWithValue("@ProductId", backInStockAlert.ProductId);
+                command.Parameters.AddWithValue("@MarketplaceId", backInStockAlert.MarketplaceId);
+                command.Parameters.AddWithValue("@Id", id);
             }
+            else if (alert is NewProductAlert newProductAlert)
+            {
+                command.CommandText = "UPDATE NewProductAlerts " +
+                                      "SET UserId = @UserId, " +
+                                      "ProductId = @ProductId " +
+                                      "WHERE id = @Id";
+                command.Parameters.AddWithValue("@UserId", newProductAlert.UserId);
+                command.Parameters.AddWithValue("@ProductId", newProductAlert.ProductId);
+                command.Parameters.AddWithValue("@Id", id);
+            }
+            else if (alert is PriceDropAlert priceDropAlert)
+            {
+                command.CommandText = "UPDATE PriceDropAlerts " +
+                                      "SET UserId = @UserId, " +
+                                      "ProductId = @ProductId, " +
+                                      "OldPrice = @OldPrice, " +
+                                      "NewPrice = @NewPrice " +
+                                      "WHERE id = @Id";
+                command.Parameters.AddWithValue("@UserId", priceDropAlert.UserId);
+                command.Parameters.AddWithValue("@ProductId", priceDropAlert.ProductId);
+                command.Parameters.AddWithValue("@OldPrice", priceDropAlert.OldPrice);
+                command.Parameters.AddWithValue("@NewPrice", priceDropAlert.NewPrice);
+                command.Parameters.AddWithValue("@Id", id);
+            }
+            else
+            {
+                throw new NotImplementedException("Unsupported alert type.");
+            }
+
+            int rowsAffected = command.ExecuteNonQuery();
+            return rowsAffected > 0;
         }
 
     }

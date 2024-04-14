@@ -1,12 +1,6 @@
 ﻿using NamespaceGPT.Business.Services.Interfaces;
 using NamespaceGPT.Data.Models;
-using NamespaceGPT.Data.Repositories;
 using NamespaceGPT.Data.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NamespaceGPT.Business.Services
 {
@@ -32,7 +26,7 @@ namespace NamespaceGPT.Business.Services
 
         public IAlert? GetAlert(int alertId)
         {
-            throw new NotImplementedException();
+            return _alertRepository.GetAlert(alertId);
         }
 
         public IEnumerable<IAlert> GetAllAlerts()

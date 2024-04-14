@@ -26,7 +26,7 @@ namespace NamespaceGPT.WPF.Authentication
 
             if (username.Equals("admin", StringComparison.CurrentCultureIgnoreCase) && password.Equals("admin", StringComparison.CurrentCultureIgnoreCase)) 
             {
-                // Navigate to admin dashboard
+                // Open up admin dashboard
                 AdminDashboard adminDashboard = new();
                 adminDashboard.Show();
                 Close();
@@ -48,8 +48,6 @@ namespace NamespaceGPT.WPF.Authentication
             Session.GetInstance().UserId = loggedInUserID;
 
             // Navigate to the main window
-
-            // Temporarly, for testing purposes...
             MainHomeWindow mainWindow = new();
             mainWindow.Show();
 

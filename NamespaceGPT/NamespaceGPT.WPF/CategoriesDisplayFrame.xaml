@@ -9,7 +9,7 @@
     <Grid Background="#363457" Margin="0,0,0,-1014">
         <StackPanel>
             <Label Content="CATEGORIES:" Foreground="White" FontSize="36"/>
-            <ItemsControl ItemsSource="{Binding Categories}" Height="143" Width="800">
+            <ItemsControl ItemsSource="{Binding Categories}" Height="auto" Width="800">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Button Command="{Binding DataContext.DisplayProductsByCategory, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"

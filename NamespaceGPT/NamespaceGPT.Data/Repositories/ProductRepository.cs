@@ -1,7 +1,9 @@
 ﻿using Microsoft.Data.SqlClient;
 using NamespaceGPT.Data.Models;
 using NamespaceGPT.Data.Repositories.Interfaces;
+using NamespaceGPT.Common.ConfigurationManager;
 using System.Data;
+using System.Text;
 
 namespace NamespaceGPT.Data.Repositories
 {
@@ -9,14 +11,14 @@ namespace NamespaceGPT.Data.Repositories
     {
         private readonly string _connectionString;
 
-        //Pentru product attributes am ales ca in baza de date sa fie reprezentat ca string
-        //e.g. in DB: attributes(str): attr1;attr2;attr3; 
-
-        public ProductRepository()
+        public ProductRepository(IConfigurationManager configurationManager)
         {
-            ConfigurationService configurationService = new();
-            _connectionString = configurationService.GetConnectionString();
+            _connectionString = configurationManager.GetConnectionString("appsettings.json");
         }
+
+        // For a product, the list of attributes is represented in the database as a string of key-value pair separated by
+        // semicolons. e.g. (In the DB) "colour:red;weight:200g;battery-life:2h".
+        // Here in the repository this string is translated to a dictionary.
 
         public int AddProduct(Product product)
         {
@@ -25,14 +27,14 @@ namespace NamespaceGPT.Data.Repositories
 
             SqlCommand command = connection.CreateCommand();
             command.CommandType = CommandType.Text;
-            command.CommandText = "INSERT INTO Product (name,category,description,brand,imageURL, attributes); SELECT SCOPE_INDENTITIY()";
+            command.CommandText = "INSERT INTO Product (name,category,description,brand,imageURL,attributes); SELECT SCOPE_INDENTITIY()";
 
             command.Parameters.AddWithValue("@name", product.Name);
             command.Parameters.AddWithValue("@category", product.Category);
             command.Parameters.AddWithValue("@description", product.Description);
             command.Parameters.AddWithValue("@brand", product.Brand);
             command.Parameters.AddWithValue("@imageURL", product.ImageURL);
-            command.Parameters.AddWithValue("@attributes", product.Attributes); 
+            command.Parameters.AddWithValue("@attributes", ConvertAttributesFromDictToString(product.Attributes));
 
 
             int newProductID = Convert.ToInt32(command.ExecuteScalar());
@@ -120,7 +122,7 @@ namespace NamespaceGPT.Data.Repositories
 
         public bool UpdateProduct(int id, Product product)
         {
-            using SqlConnection connection = new SqlConnection(_connectionString);
+            using SqlConnection connection = new(_connectionString);
             connection.Open();
 
             SqlCommand command = connection.CreateCommand();
@@ -135,23 +137,22 @@ namespace NamespaceGPT.Data.Repositories
             command.Parameters.AddWithValue("@brand", product.Brand);
             command.Parameters.AddWithValue("@imageURL", product.ImageURL);
             command.Parameters.AddWithValue("@id", product.Id);
-            command.Parameters.AddWithValue("@attribues", product.Attributes); 
+            command.Parameters.AddWithValue("@attribues", ConvertAttributesFromDictToString(product.Attributes));
 
             int rowsAffected = command.ExecuteNonQuery();
 
             return rowsAffected > 0;
         }
 
-
         public static IDictionary<string, string> ConvertAttributesFromStringToDict(string string_attributes)
         {
-            if(string.IsNullOrEmpty(string_attributes)) throw new ArgumentException("string_attributes cannot be null or empty");
+            if (string.IsNullOrEmpty(string_attributes))
+            {
+                throw new ArgumentException("string_attributes cannot be null or empty");
+            }
 
-
-            // string attributes will be represented in the following way: "color:red;weight:200g;height:100mm; ...
-            int KEY = 0,
-                VALUE = 1;
-            IDictionary<string, string> attributes = new Dictionary<string, string>();
+            const int KEY = 0, VALUE = 1;
+            Dictionary<string, string> attributes = [];
             IEnumerable<string> split_attributes = string_attributes.Split(';');
 
 
@@ -161,24 +162,22 @@ namespace NamespaceGPT.Data.Repositories
                 if (keyValue.Length == 2)
                 {
                     attributes.Add(keyValue[KEY], keyValue[VALUE]);
-                    //attributes[keyValue[KEY]] = attributes[keyValue[VALUE]];
                 }
             }
 
             return attributes;
         }
 
-        public static string ConvertAttributesFromStringToDict(IDictionary<string,string> dictionary_attributes)
+        private static string ConvertAttributesFromDictToString(IDictionary<string, string> dictionary_attributes)
         {
-            string attributes = string.Empty;
-            
-            foreach(KeyValuePair<string,string> pair in dictionary_attributes)
+            StringBuilder stringBuilder = new();
+
+            foreach (KeyValuePair<string, string> pair in dictionary_attributes)
             {
-                attributes += pair.Key + ':' + pair.Value + ';'; //e.g. ///;color:black'...
+                stringBuilder.Append(pair.Key + ':' + pair.Value + ';');
             }
 
-            return attributes;
-
+            return stringBuilder.ToString();
         }
     }
 }

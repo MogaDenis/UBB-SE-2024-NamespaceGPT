@@ -34,7 +34,6 @@ namespace NamespaceGPT.WPF
         {
             //Get price
             int lowestPrice = int.MaxValue;
-            bool foundPrice = false;
             List<Listing> listings = _listingController.GetAllListingsOfProduct(_productId).ToList();
 
 
@@ -42,12 +41,11 @@ namespace NamespaceGPT.WPF
             {
                 if (listing.Price < lowestPrice)
                 {
-                    foundPrice = true;
                     lowestPrice = listing.Price;
                     break;
                 }
             }
-            if (foundPrice)
+            if (lowestPrice < int.MaxValue)
             {
                 ProductMinPrice.Text = lowestPrice.ToString();
             }
@@ -75,7 +73,7 @@ namespace NamespaceGPT.WPF
             }
         }
 
-        private void ReviewButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void ReviewButton_Click(object sender, RoutedEventArgs e)
         {
             if (Product == null)
             {
@@ -86,7 +84,7 @@ namespace NamespaceGPT.WPF
             Session.GetInstance().Frame.NavigationService.Navigate(productReviewsPage);
         }
 
-        private void CompareButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void CompareButton_Click(object sender, RoutedEventArgs e)
         {
             // For demonstration purpose only...
             Product? secondProduct = _productController.GetProduct(2);
@@ -100,7 +98,7 @@ namespace NamespaceGPT.WPF
             Session.GetInstance().Frame.NavigationService.Navigate(compareProductsView);
         }
 
-        private void FavouriteButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void FavouriteButton_Click(object sender, RoutedEventArgs e)
         {
             var favouriteProductsOfUser = Controller.GetInstance().FavouriteProductController
                 .GetAllFavouriteProductsOfUser(Session.GetInstance().UserId);
