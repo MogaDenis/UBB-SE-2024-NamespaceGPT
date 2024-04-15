@@ -34,7 +34,7 @@ CommandParameter="{Binding}" Content="{Binding}" Background="#FF735290" Margin="
                 <StackPanel>
 
                     <!-- Header content -->
-                    <Border Background="#6966A3" Grid.Row="0" Margin="0,0,0,0" Height="80">
+                    <Border Background="#6966A3" Grid.Row="0" Margin="0,0,0,0" Height="51">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Button Margin="0,0,200,0" Click="HomeButton_Click">Home</Button>
                             
