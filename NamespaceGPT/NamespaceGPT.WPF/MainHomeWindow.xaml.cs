@@ -2,8 +2,9 @@
 using NamespaceGPT.Data.Models;
 using GalaSoft.MvvmLight.Command;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
+using NamespaceGPT.WPF.Authentication;
+using NamespaceGPT.WPF.ProductPages;
 
 namespace NamespaceGPT.WPF
 {
@@ -11,11 +12,11 @@ namespace NamespaceGPT.WPF
     {
         private readonly ProductController _productController;
         public List<string> Categories { get; set; }
-        public ICommand DisplayProductsByCategory { get; set; } = new RelayCommand<string>(ButtonClicked);
+        public ICommand DisplayProductsByCategoryButtonCommand { get; set; } = new RelayCommand<string>(CategoryButton_Click);
         public MainHomeWindow()
         {
             InitializeComponent();
-            SearchListbox.Visibility = Visibility.Collapsed;
+
             _productController = Controller.GetInstance().ProductController;
             Categories = GetCategories().Take(3).ToList();
 
@@ -36,47 +37,43 @@ namespace NamespaceGPT.WPF
             return categories.ToList();
         }
 
-        private static void ButtonClicked(string category)
+        private static void CategoryButton_Click(string category)
         {
             ProductsByCategoryPage productsfilteredPage = new(category);
             Session.GetInstance().Frame.NavigationService.Navigate(productsfilteredPage);
         }
 
-        private void CategoriesDisplay(object sender, RoutedEventArgs e)
+        private void AllCategoriesButton_Click(object sender, RoutedEventArgs e)
         {
-            CategoriesDisplayFrame categoriesDisplay = new();
-            Session.GetInstance().Frame.NavigationService.Navigate(categoriesDisplay);
+            CategoriesDisplayPage categoriesDisplayPage = new();
+            Session.GetInstance().Frame.NavigationService.Navigate(categoriesDisplayPage);
         }
 
-        private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void FavouriteProductsButton_Click(object sender, RoutedEventArgs e)
+        {
+            FavouriteProductsView favouriteProductsView = new(Session.GetInstance().UserId);
+            Session.GetInstance().Frame.NavigationService.Navigate(favouriteProductsView);
+        }
+
+        private void ProfileButton_Click(object sender, RoutedEventArgs e)
+        {
+            Login loginPage = new();
+            loginPage.Show();
+            Close();
+        }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             string searchText = SearchTextBox.Text;
-            var filteredProducts = _productController.GetAllProducts().ToList().Where(p => p.Name.ToLower().Contains(searchText)).ToList();
-            if (searchText != "")
-            {
-                SearchListbox.Items.Clear();
 
-                // Populate the ListBox with the filtered products
-                foreach (var product in filteredProducts)
-                {
-                    string itemstring = product.Name + " " + product.Brand;
-                    SearchListbox.Items.Add(itemstring);
-                }
+            ProductsByNameSearchPage productsByNameSearchPage = new(searchText);
+            Session.GetInstance().Frame.NavigationService.Navigate(productsByNameSearchPage);
+        }
 
-                // Show or hide the ListBox based on whether there are filtered products
-                if (filteredProducts.Count != 0)
-                {
-                    SearchListbox.Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    SearchListbox.Visibility = Visibility.Collapsed;
-                }
-            }
-            else
-            {
-                SearchListbox.Visibility = Visibility.Collapsed;
-            }
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            HomePage homepage = new();
+            MainFrame.NavigationService.Navigate(homepage);
         }
     }
 }

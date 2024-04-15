@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="NamespaceGPT.WPF.ProductsByCategoryPage"
+﻿<UserControl x:Class="NamespaceGPT.WPF.ProductPages.ProductsByCategoryPage"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -16,7 +16,7 @@
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <Button Background="#363457"
-     Command="{Binding DataContext.ButtonCommand, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
+     Command="{Binding DataContext.ProductButtonCommand, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
      CommandParameter="{Binding Id}">
                         <Border BorderBrush="LightGray" BorderThickness="0,0,0,0" Padding="5" Margin="5">
                             <StackPanel>

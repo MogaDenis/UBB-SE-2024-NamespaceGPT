@@ -20,12 +20,12 @@
                     <ItemsControl ItemsSource="{Binding Categories}" Height="143" Width="122">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <Button Command="{Binding DataContext.DisplayProductsByCategory, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
+                                <Button Command="{Binding DataContext.DisplayProductsByCategoryButtonCommand, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
 CommandParameter="{Binding}" Content="{Binding}" Background="#FF735290" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="White" BorderThickness="0,0,0,0"/>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
-                    <Button Click="CategoriesDisplay"  Content="View All categories : " Margin="10" Height="20" Foreground="White" Width="auto" Background="#FF735290" BorderThickness="0,0,0,0"/>
+                    <Button Click="AllCategoriesButton_Click"  Content="View All categories : " Margin="10" Height="20" Foreground="White" Width="auto" Background="#FF735290" BorderThickness="0,0,0,0"/>
                 </StackPanel>
             </Border>
             <!-- Main Content -->
@@ -35,9 +35,26 @@ CommandParameter="{Binding}" Content="{Binding}" Background="#FF735290" Margin="
 
                     <!-- Header content -->
                     <Border Background="#6966A3" Grid.Row="0" Margin="0,0,0,0" Height="80">
-                        <StackPanel>
-                            <TextBox x:Name="SearchTextBox" Foreground="#FF6F6E6E" Margin="0,10,0,0" Width="238" Height="24" VerticalAlignment="Center" TextChanged="SearchTextBox_TextChanged"/>
-                            <ListBox x:Name="SearchListbox" Margin="0,0,0,0" Width="238" Height="200" Panel.ZIndex="10" SelectionMode="Extended"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Button Margin="0,0,200,0" Click="HomeButton_Click">Home</Button>
+                            
+                            <TextBox x:Name="SearchTextBox" Foreground="#FF6F6E6E" Width="238" Height="30" VerticalContentAlignment="Center"/>
+                            
+                            <Button Height="30" Content="Search" Margin="10,0,0,0" Click="SearchButton_Click"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="200,0,0,0" >
+                                <Button Click="FavouriteProductsButton_Click" Height="30" Width="30" BorderThickness="0,0,0,0">
+                                    <Button.Background>
+                                        <ImageBrush/>
+                                    </Button.Background>
+                                    <Image Source="https://static-00.iconduck.com/assets.00/white-heart-emoji-2048x2008-1l7jbme4.png" Height="30" HorizontalAlignment="Right" />
+                                </Button>
+                                <Button Click="ProfileButton_Click" Height="30" Width="30" BorderThickness="0,0,0,0" Margin="10,0,0,0">
+                                    <Button.Background>
+                                        <ImageBrush/>
+                                    </Button.Background>
+                                    <Image Source="https://cdn-icons-png.freepik.com/256/552/552848.png" Height="30" HorizontalAlignment="Right" />
+                                </Button>
+                            </StackPanel>
                         </StackPanel>
                     </Border>
 

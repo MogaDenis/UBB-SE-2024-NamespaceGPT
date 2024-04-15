@@ -5,13 +5,13 @@
     <Compile Update="Admin\AdminDashboard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="CategoriesDisplayFrame.xaml.cs">
+    <Compile Update="CategoriesDisplayPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="CompareProductsView.xaml.cs">
+    <Compile Update="ProductPages\CompareProductsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="FavouriteProductsView.xaml.cs">
+    <Compile Update="ProductPages\FavouriteProductsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Authentication\Login.xaml.cs">
@@ -23,29 +23,30 @@
     <Compile Update="Admin\UsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ProductPage.xaml.cs">
-    </Compile>
     <Compile Update="HomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MainHomeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ProductsByCategoryPage.xaml.cs">
+    <Compile Update="ProductPages\ProductsByCategoryPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProductPages\ProductsByNameSearchPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="CategoriesDisplayFrame.xaml">
+    <Page Update="CategoriesDisplayPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="CompareProductsView.xaml">
+    <Page Update="ProductPages\CompareProductsView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\AdminDashboard.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="FavouriteProductsView.xaml">
+    <Page Update="ProductPages\FavouriteProductsView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Authentication\Login.xaml">
@@ -66,15 +67,16 @@
     <Page Update="Admin\UsersView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ProductPage.xaml">
-    </Page>
     <Page Update="HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainHomeWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ProductsByCategoryPage.xaml">
+    <Page Update="ProductPages\ProductsByCategoryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProductPages\ProductsByNameSearchPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

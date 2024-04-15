@@ -4,13 +4,13 @@ using NamespaceGPT.Data.Models;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace NamespaceGPT.WPF
+namespace NamespaceGPT.WPF.ProductPages
 {
     public partial class ProductsByCategoryPage : UserControl
     {
         public List<Product> Products { get; set; }
         private readonly ProductController _productController;
-        public ICommand ButtonCommand { get; set; } = new RelayCommand<int>(ButtonClicked);
+        public ICommand ProductButtonCommand { get; set; } = new RelayCommand<int>(ProductButton_Click);
         public ProductsByCategoryPage(string category)
         {
             _productController = Controller.GetInstance().ProductController;
@@ -20,7 +20,7 @@ namespace NamespaceGPT.WPF
             InitializeComponent();
         }
 
-        private static void ButtonClicked(int itemId)
+        private static void ProductButton_Click(int itemId)
         {
             ProductPage productPage = new(itemId);
             Session.GetInstance().Frame.NavigationService.Navigate(productPage);

@@ -3,7 +3,7 @@ using NamespaceGPT.Data.Models;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
 
-namespace NamespaceGPT.WPF
+namespace NamespaceGPT.WPF.ProductPages
 {
     public partial class FavouriteProductsView : UserControl
     {

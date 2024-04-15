@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Windows.Controls;
 
-namespace NamespaceGPT.WPF
+namespace NamespaceGPT.WPF.ProductPages
 {
     public partial class CompareProductsView : UserControl, INotifyPropertyChanged
     {

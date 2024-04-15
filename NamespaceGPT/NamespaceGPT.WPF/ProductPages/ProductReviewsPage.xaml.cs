@@ -3,7 +3,7 @@ using NamespaceGPT.Data.Models;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
 
-namespace NamespaceGPT.WPF
+namespace NamespaceGPT.WPF.ProductPages
 {
     public partial class ProductReviewsPage : UserControl
     {
@@ -18,11 +18,14 @@ namespace NamespaceGPT.WPF
         public ProductReviewsPage(int productId)
         {
             _productId = productId;
+
             _productController = Controller.GetInstance().ProductController;
             _reviewController = Controller.GetInstance().ReviewController;
             _userController = Controller.GetInstance().UserController;
+
             InitializeReviewsList();
             InitializeComponent();
+
             DataContext = this;
             Product = _productController.GetProduct(productId);
         }

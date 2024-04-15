@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace NamespaceGPT.WPF
+namespace NamespaceGPT.WPF.ProductPages
 {
     public partial class ProductPage : UserControl
     {
